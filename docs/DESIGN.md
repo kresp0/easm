@@ -202,14 +202,16 @@ DRV_DIR    HL = callback per name
   line numbers of errors would then need the file too.
 
 ### Software UART on the printer port
-The DB25's lines (Genio hardware notes, VGLDK `printer.h`): data on port 0x10 (the keyboard column
-latch), BUSY on port 0x11 bit 5, STROBE on port 0x12 bit 2. The ROM dumper project sent data at 9600
-baud on DATA0 with a timed loop. A two-way link could use DATA0 (TX) and BUSY (RX), with these
+The DB25's lines ([hardware/HARDWARE.md](https://github.com/kresp0/vtech-genio2000/blob/main/docs/hardware/HARDWARE.md), from VGLDK `printer.h`): data on
+port 0x10 (the keyboard column latch), BUSY on port 0x11 bit 5, STROBE on port 0x12 bit 2. The ROM
+dumper (https://github.com/kresp0/vtech-genio2000-rom-dumper) sent data at 9600 baud on DATA0 with a
+timed loop ([hardware/CLOCK_AND_SOUND.md](https://github.com/kresp0/vtech-genio2000/blob/main/docs/hardware/CLOCK_AND_SOUND.md)). A two-way link could use DATA0 (TX) and BUSY (RX), with these
 constraints:
 * port 0x10 is shared with the keyboard scan: a transfer must run with interrupts off and the keyboard
   not scanned, and between transfers the keyboard scan leaves DATA0 low, which a UART sees as a break;
   the far side (or a transistor) must accept or invert that;
-* the timing loops must be counted in T-states for 6.13 MHz (measured clock) and checked on the unit.
+* the timing loops must be counted in T-states for 6.13 MHz (the measured clock,
+  [hardware/HARDWARE.md](https://github.com/kresp0/vtech-genio2000/blob/main/docs/hardware/HARDWARE.md)) and checked on the unit.
 
 ### ESP32 as storage and link to a PC
 An ESP32 on the printer port, speaking a framed protocol over the UART: `[cmd][len][data][checksum]`,

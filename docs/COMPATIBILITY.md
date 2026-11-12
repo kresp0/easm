@@ -44,7 +44,8 @@ EASM inherits EBASIC's drivers, which were verified only in MAME too. Most serio
 1. **The second cartridge page (0x83)**: works on the unit (the guide was used there); only the guide
    is in it.
 2. **The firmware ISR as cursor service**: it relies on firmware internals (DB00/DB01,
-   DCF0-DCF7, hook DFF5) in one combination; EBASIC's `hwtest` measured the parts separately. Without
+   DCF0-DCF7, hook DFF5) in one combination; EBASIC's `hwtest` measured the parts separately
+   ([HW_RESULTS_20261110.md](https://github.com/kresp0/vtech-genio2000/blob/main/docs/firmware/HW_RESULTS_20261110.md)). Without
    the expected vector EASM runs with interrupts off: no cursor and no ANSWER break, the rest works.
 3. **ANSWER break from the interrupt hook**: it drives and reads port 0x10 from inside the firmware's
    interrupt routine. Untested on the unit.

@@ -1,6 +1,8 @@
 # EASM memory map
 
-The hardware facts are the ones EBASIC measured or took from the firmware; EASM adds none. The
+The hardware facts are the ones EBASIC measured or took from the firmware; EASM adds none. Their sources
+are in the Genio 2000 research repository: [hardware/MEMORY_MAP.md](https://github.com/kresp0/vtech-genio2000/blob/main/docs/hardware/MEMORY_MAP.md),
+[hardware/IO_PORTS.md](https://github.com/kresp0/vtech-genio2000/blob/main/docs/hardware/IO_PORTS.md), [firmware/INTERRUPTS.md](https://github.com/kresp0/vtech-genio2000/blob/main/docs/firmware/INTERRUPTS.md). The
 numbers of EASM's own use come from `out/usage.txt` (written by `make`) and `src/shared.inc`.
 
 ## CPU address space
@@ -18,7 +20,8 @@ numbers of EASM's own use come from `out/usage.txt` (written by `make`) and `src
 | 0x80 | 1 (EEPROM 0x0000-0x3FFF) | EASM: header, API table, drivers, editor, command line, assembler, monitor, disassembler | 10849 of 16384 bytes |
 | 0x83 | 2 (EEPROM 0x4000-0x7FFF) | the guide: viewer and compressed text | 8142 of 16384 bytes |
 
-Bit 1 of the selector drives A14 on the RevD board with an AT28C256 (measured by EBASIC); MAME
+Bit 1 of the selector drives A14 on the RevD board with an AT28C256 (measured on the unit,
+[HW_RESULTS_20261110.md](https://github.com/kresp0/vtech-genio2000/blob/main/docs/firmware/HW_RESULTS_20261110.md) test 3); MAME
 decodes bit 0, so 0x83 selects the second half on both. EASM uses two pages: a third page would need
 a larger EEPROM and a board that decodes another selector bit, which has not been examined. Page 1 is
 mapped at all times except while the guide runs, which reaches page 1 through stubs in RAM.
