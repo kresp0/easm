@@ -21,6 +21,11 @@ development system. Everything runs on the Genio's own Z80: no BASIC and no PC a
 
 *(MAME snapshots of the demonstration program; the gaps between characters are the LCD's.)*
 
+**Machines.** Written for the Spanish VTech Genio 2000, where its first runs on a real unit worked (the rest was tested in MAME). It will most likely also work on its
+relatives the Genius 4000, Genius LEADER 4000 Quadro, Genius LEADER 4004 Quadro L and PreComputer
+Power Pad, but it has not been tried on them; their keyboards carry other legends, so the key names
+used here and some typed characters may differ.
+
 ## A first program
 In the editor (ANSWER switches between the editor and the command line):
 ```
