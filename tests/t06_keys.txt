@@ -69,4 +69,35 @@ type ASM\n
 wait 1
 dump after_new
 expect 2 OK, no code
+# A code example taken at the command prompt goes to the editor, not onto the command line
+type \h
+wait 0.3
+type \u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u
+type \d\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d
+wait 0.3
+dump index_example
+expect 3 >Example
+type \n
+wait 0.3
+type \n
+wait 0.5
+dump example_to_editor
+expect 0   MSG: DB "HOLA",0
+type \e
+wait 0.3
+expect 3 >
+# in A, the example of a page is typed as the line to assemble
+type A D000\n
+type \h
+wait 0.3
+type N\d
+wait 0.3
+expect 1 >NOP
+type \n\n
+wait 0.3
+dump a_example
+expect 3 D000 NOP
+type \n\n
+wait 0.3
+expectmem D000 00
 quit

@@ -1,7 +1,14 @@
 # EASM compatibility report
 
 ## Where it was tested
-**Only in MAME**, with the `genio2000` driver of `~/PROYECTOS/genio2000/mame-upstream` (the `genio`
+**On the real unit** (report from the first run, 32 KiB image on the RevD cartridge, 2026-11-12):
+start-up, typing at the command line, `ASM` ("OK, no code"), `? 1` ("=0001H 1"), and the guide, which
+opened and was navigated: that runs in the **second cartridge page**, so the page switch works on the
+unit. That run found the one problem fixed since: a code example taken from the guide at the command
+prompt was typed as a command ("Bad command"); it now goes into the editor. Nothing else has been
+tried on the unit yet.
+
+**Everything else only in MAME**, with the `genio2000` driver of `~/PROYECTOS/genio2000/mame-upstream` (the `genio`
 build), headless, through `tests/run_tests.sh`. MAME was not modified for EASM. Nothing of EASM has
 run on a real Genio 2000.
 
@@ -15,7 +22,7 @@ Results of the final image (`tests/results/`):
 | `t03_errors` 15 error cases, line numbers, the editor at the error | 48 / 48 |
 | `t04_editor` editing, long lines, line numbers, activity keys, guide (page 2), FIND, LINE | 28 / 28 |
 | `t05_monitor` A D M E F C G R, user-RAM protection, API, EXIT, ANSWER break | 26 / 26 |
-| `t06_keys` ASM/RUN keys, guide from the command line, NEW | 15 / 15 |
+| `t06_keys` ASM/RUN keys, guide from the command line, where examples go, NEW | 21 / 21 |
 | `t07_limits` text full, symbol table full, BYE to the firmware | 6 / 6 |
 | `insn.py` all official instruction forms: EASM's bytes and its disassembly vs MAME's `unidasm` | 697 forms, 0 differences |
 | `opsweep.py` every opcode after every prefix through EASM's disassembler vs `unidasm` | 5326 instructions, 0 differences in documented opcodes |
@@ -34,10 +41,9 @@ lives in page 2 and calls page 1 for every key and every character it draws).
 
 ## Risks on the real unit
 EASM inherits EBASIC's drivers, which were verified only in MAME too. Most serious first:
-1. **The second cartridge page (0x83)**: the selector bit was measured on the RevD board, but no code
-   has run from the second half on the unit. Only the guide is there: if the page does not switch,
-   everything but HELP still works, and HELP would crash.
-2. **The firmware ISR as cursor service and timer**: it relies on firmware internals (DB00/DB01,
+1. **The second cartridge page (0x83)**: works on the unit (the guide was used there); only the guide
+   is in it.
+2. **The firmware ISR as cursor service**: it relies on firmware internals (DB00/DB01,
    DCF0-DCF7, hook DFF5) in one combination; EBASIC's `hwtest` measured the parts separately. Without
    the expected vector EASM runs with interrupts off: no cursor and no ANSWER break, the rest works.
 3. **ANSWER break from the interrupt hook**: it drives and reads port 0x10 from inside the firmware's

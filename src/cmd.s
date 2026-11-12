@@ -26,6 +26,7 @@ cmdnext::
 	ld	(INASM), a
 	ld	(HOFS), a
 	ld	(CURSOFF), a
+	ld	(RLMODE), a
 	call	NEWLINE
 	ld	a, #'>
 	call	PUTCHAR
@@ -123,13 +124,23 @@ docmd:	ld	iy, #LBUF
 	ret	z
 	cp	#'?
 	jp	z, c_calc
+	call	findcmd
+	jr	c, 9$
+	jp	(hl)
+9$:	ld	a, #E_CMD
+	jp	error
+
+;findcmd - the command named at IY: NC and HL = its handler, else carry. Destroys A,B,C,D,E,F.
+findcmd:
 	call	getname
-	jr	nc, 9$
+	ccf
+	ret	c
 	ld	hl, #CMDS
 	ld	c, #0
 1$:	ld	a, (hl)			; compare NAMBUF with each name of the table
 	or	a
-	jr	z, 9$
+	scf
+	ret	z
 	ld	de, #NAMBUF
 	ld	a, (de)
 	ld	b, a
@@ -157,15 +168,26 @@ docmd:	ld	iy, #LBUF
 	inc	hl
 	ld	h, (hl)
 	ld	l, a
-	jp	(hl)
+	or	a
+	ret
 4$:	pop	hl
 5$:	bit	7, (hl)
 	inc	hl
 	jr	z, 5$
 	inc	c
 	jr	1$
-9$:	ld	a, #E_CMD
-	jp	error
+
+; Carry if the guide's example in WBUF is a command (its first word, or "?")
+excmd:	push	iy
+	ld	iy, #WBUF
+	call	skipsp
+	cp	#'?
+	scf
+	jr	z, 1$
+	call	findcmd
+	ccf
+1$:	pop	iy
+	ret
 
 .macro	NAME	text, last
 	.ascii	text
@@ -639,6 +661,8 @@ sametxt:
 ; E addr [byte...]: write bytes; with none, ask for each one ("D000 3E " then a value, ENTER keeps it)
 c_e:	call	argreq
 	ld	(MADDR), hl
+	ld	a, #1
+	ld	(RLMODE), a
 	call	skipsp
 	cp	#',
 	jr	nz, 5$
@@ -692,6 +716,8 @@ poke:	ld	e, l
 ; A addr: assemble line by line. ENTER alone or ANSWER ends.
 c_a:	call	argreq
 	ld	(MADDR), hl
+	ld	a, #1
+	ld	(RLMODE), a
 	call	argend
 	ld	(ERRSP), sp
 	ld	hl, #aerr
@@ -1096,7 +1122,15 @@ readline::
 	call	restscr
 	pop	af
 	jr	nc, 1$
-	call	exline			; the example replaces the line
+	ld	a, (RLMODE)		; at the prompt, an example that is code goes to the editor
+	or	a
+	jr	nz, 6$
+	call	excmd
+	jr	c, 6$
+	ld	a, #1
+	ld	(EXEDIT), a
+	jr	9$
+6$:	call	exline			; the example replaces the line
 	jr	1$
 2$:	call	actkey
 	jr	nc, 3$

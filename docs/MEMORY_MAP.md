@@ -15,7 +15,7 @@ numbers of EASM's own use come from `out/usage.txt` (written by `make`) and `src
 ## Cartridge pages (port 0x03)
 | Value | Page | Contents | Used |
 |---|---|---|---|
-| 0x80 | 1 (EEPROM 0x0000-0x3FFF) | EASM: header, API table, drivers, editor, command line, assembler, monitor, disassembler | 10780 of 16384 bytes |
+| 0x80 | 1 (EEPROM 0x0000-0x3FFF) | EASM: header, API table, drivers, editor, command line, assembler, monitor, disassembler | 10849 of 16384 bytes |
 | 0x83 | 2 (EEPROM 0x4000-0x7FFF) | the guide: viewer and compressed text | 8142 of 16384 bytes |
 
 Bit 1 of the selector drives A14 on the RevD board with an AT28C256 (measured by EBASIC); MAME
@@ -52,7 +52,7 @@ mapped at all times except while the guide runs, which reaches page 1 through st
 | Range | Size | Use |
 |---|---|---|
 | C000-C0FF | 256 | `LBUF`: the line being edited (editor and command line); page aligned |
-| C100-C1F8 | 249 of 256 | variables (`src/shared.inc`): shadow screen `SCR` (C100-C14F), cursor, keyboard, editor, assembler, monitor, guide |
+| C100-C1FA | 251 of 256 | variables (`src/shared.inc`): shadow screen `SCR` (C100-C14F), cursor, keyboard, editor, assembler, monitor, guide |
 | C200-C2FF | 256 | `WBUF`: the line being assembled, a page of the guide; `ROWBUF` (C280) builds viewer screens |
 | C300-C37F | 128 | `RAMCODE`: page trampolines and the interrupt hook, copied from page 1 at start-up |
 | C380-C3CF | 80 | `SCRSAVE`: the command-line screen while the editor, a viewer or the guide covers it |

@@ -29,6 +29,6 @@ PASS row 2 = [Symbol table full] (got [Symbol table full])
 |Symbol table full   |
 |>BYE                |
 |                    |
-PASS PC in 0000-7FFF (got 10E8)
-PASS PC in 0000-7FFF (got 10E6)
+PASS PC in 0000-7FFF (got 10EB)
+PASS PC in 0000-7FFF (got 10E9)
 RESULT pass=6 fail=0

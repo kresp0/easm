@@ -92,7 +92,7 @@ compares the bytes with MAME's own disassembler: no differences.
   `ERRSP` and jumps to `ERRJP`. The command line, the editor and the `A` command each install a handler.
 
 ### Two pages are enough
-Page 1 uses 10780 bytes and page 2 8142: about 13.8 KiB are free. A third page would need a larger
+Page 1 uses 10849 bytes and page 2 8142: about 13.5 KiB are free. A third page would need a larger
 EEPROM and a board decoding another selector bit, which has not been examined. The free space is
 enough for the next features (storage, a listing, macros); the guide can also take more text.
 
@@ -154,8 +154,9 @@ The viewer is EBASIC's (an index, pages wrapped to 20 columns, a page per entry,
 `tools/gen_help.py` checks that every mnemonic of ASMB.Z80's table and every directive has an entry,
 compresses the text with a 128-piece dictionary (8623 -> 5637 bytes plus an 816-byte dictionary),
 and lays every page out as the viewer does, failing if one does not fit. 99 entries: 22 topics and
-77 mnemonics and directives. The example of a page goes into the editor as a new line, or onto the
-command line.
+77 mnemonics and directives. The example of a page goes into the editor as a new line; at the command
+prompt only an example that is a command is typed there (code goes to the editor), and in `A` it is
+typed as the line to assemble.
 
 ## 9. Build and tests
 `make` assembles the nine page-1 modules and links them at 0x8000, generates the guide data and the

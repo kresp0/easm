@@ -197,8 +197,13 @@ activity keys 192-213, 240-255 in panel order. The table stays at these addresse
 HELP opens an index: topics first (start here, keys, commands, monitor, syntax, numbers, expressions,
 directives, registers, flags, conditions, addressing, API, memory map, errors, an example), then one
 page for every mnemonic and directive. Ü and ; (or LEFT/RIGHT) move; a letter jumps to the mnemonics
-from that letter; ENTER opens a page, and on a page takes the example (into the editor as a new line,
-or onto the command line); ANSWER goes back.
+from that letter; ENTER opens a page, and on a page takes the example; ANSWER goes back.
+
+Where the example goes:
+* from the editor: a new line below the current one;
+* from the command prompt: if it is a command (the pages "Commands" and "Monitor"), onto the command
+  line, ready to run with ENTER; if it is code (every other page), into the editor as a new line;
+* from `A`: onto its line, ready to assemble.
 
 ## Limits
 * Text and symbols: 2816 bytes together (0xC500-0xCFFF). A line takes its length + 1 byte, and

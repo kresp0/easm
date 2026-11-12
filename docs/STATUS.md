@@ -1,7 +1,7 @@
 # EASM status: implemented and pending
 
-All "implemented" items are tested in MAME (see [COMPATIBILITY.md](COMPATIBILITY.md)); none on the
-real unit.
+All "implemented" items are tested in MAME (see [COMPATIBILITY.md](COMPATIBILITY.md)); on the real
+unit only start-up, the command line, `ASM`, `?` and the guide so far.
 
 ## Implemented
 **Environment**
@@ -42,7 +42,7 @@ real unit.
 ## Pending
 | Item | Notes |
 |---|---|
-| Running on a real Genio 2000 | the first thing to do; see the risks in COMPATIBILITY.md |
+| The rest on a real Genio 2000 | editor, RUN/G/EXIT/ANSWER, monitor; see the risks in COMPATIBILITY.md |
 | Storage: SAVE/LOAD of sources and binaries | needs a link; driver interface designed (DESIGN.md §10) |
 | Software UART on the printer port, ESP32 storage, PC transfers, remote debugging | designed, not implemented (DESIGN.md §10) |
 | Macros, INCLUDE, conditional assembly, multi-file projects | RAM is the limit; notes in DESIGN.md §10 |

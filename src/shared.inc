@@ -120,7 +120,9 @@ SPOLD = SPP+2
 SPNEW = SPOLD+2
 SAVCXY = SPNEW+2		; CX, CY of the saved console
 STPC = SAVCXY+2			; address of the statement ($)
-VARS_END = STPC+2
+RLMODE = STPC+2			; readline: 0 at the command prompt, 1 in A and E
+EXEDIT = RLMODE+1		; the guide's example goes to the editor
+VARS_END = EXEDIT+1
 
 ; Error numbers (messages in asm.s)
 E_RANGE = 1

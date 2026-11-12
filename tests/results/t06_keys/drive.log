@@ -53,4 +53,25 @@ PASS row 1 = [D000-D002 3 bytes] (got [D000-D002 3 bytes])
 |OK, no code         |
 |>                   |
 PASS row 2 = [OK, no code] (got [OK, no code])
-RESULT pass=15 fail=0
+--- index_example t=39.66
+| Running code       |
+| Memory map         |
+| Errors             |
+|>Example            |
+PASS row 3 = [>Example] (got [>Example])
+--- example_to_editor t=40.78
+|  MSG: DB "HOLA",0  |
+|                    |
+|                    |
+|                    |
+PASS row 0 = [  MSG: DB "HOLA",0] (got [  MSG: DB "HOLA",0])
+PASS row 3 = [>] (got [>])
+PASS row 1 = [>NOP] (got [>NOP])
+--- a_example t=43.78
+|>ASM                |
+|OK, no code         |
+|>A D000             |
+|D000 NOP            |
+PASS row 3 = [D000 NOP] (got [D000 NOP])
+PASS mem D000 = 00 (got 00 )
+RESULT pass=21 fail=0

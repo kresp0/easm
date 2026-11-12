@@ -17,7 +17,7 @@ local machine = manager.machine
 local mem = machine.devices[":maincpu"].spaces["program"]
 local out = io.open(os.getenv("EA_LOG") or "drive.log", "w")
 out:setvbuf("line")
-local HOLD, GAP = 0.05, 0.05
+local HOLD, GAP = tonumber(os.getenv("EA_HOLD") or "0.05"), tonumber(os.getenv("EA_GAP") or "0.05")
 local V = {}
 for l in io.lines(os.getenv("EA_VARS")) do
   local n, v = string.match(l, "^(%S+) (%d+)$")

@@ -71,9 +71,10 @@ disassembler. Needs MAME's `genio` build in `~/PROYECTOS/genio2000/mame-upstream
 `unidasm`. See [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md) for the results.
 
 ## Status
-**Verified only in MAME.** Nothing of EASM has run on a real Genio 2000 yet. It reuses EBASIC's
-drivers, which were also verified only in MAME; [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md) lists
-the risks on the unit.
+**Tested in MAME; first steps on the real unit.** A first run on a Genio 2000 (32 KiB image) worked at
+start-up, at the command line, with `ASM` and `?`, and in the guide (the second cartridge page). The
+editor, running programs and the monitor have been tested only in MAME so far;
+[docs/COMPATIBILITY.md](docs/COMPATIBILITY.md) lists the risks.
 
 ## Licence
 * GPL-3.0-or-later (`LICENSE`), Copyright (C) 2026 Santiago Crespo: EASM's own files, and the parts

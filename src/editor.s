@@ -254,6 +254,11 @@ edstart:
 	jr	c, 1$
 	ld	a, (hl)
 1$:	ld	(CUR), a
+	ld	hl, #EXEDIT		; the guide's example, taken at the command prompt
+	ld	a, (hl)
+	ld	(hl), #0
+	or	a
+	jp	nz, ed_insex
 ed_loop:
 	call	drawed
 	call	GETKEY
@@ -695,7 +700,9 @@ ed_help:
 	xor	a
 	call	help
 	jp	nc, ed_loop
-	ld	a, (LEN)		; an empty line takes it; otherwise a new line below
+; The example in WBUF: an empty line takes it; otherwise a new line below
+ed_insex:
+	ld	a, (LEN)
 	push	af
 	xor	a			; LBUF = two spaces and the example (WBUF is needed by insline)
 	ld	(LEN), a
