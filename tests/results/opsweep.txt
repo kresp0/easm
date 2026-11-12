@@ -1,0 +1,640 @@
+undocumented/empty: D2C7 ed           EASM: DB ED,$00          unidasm: db   $ed
+undocumented/empty: D700 ed           EASM: DB ED,$00          unidasm: db   $ed
+undocumented/empty: D704 ed           EASM: DB ED,$01          unidasm: db   $ed
+undocumented/empty: D708 ed           EASM: DB ED,$02          unidasm: db   $ed
+undocumented/empty: D70C ed           EASM: DB ED,$03          unidasm: db   $ed
+undocumented/empty: D710 ed           EASM: DB ED,$04          unidasm: db   $ed
+undocumented/empty: D714 ed           EASM: DB ED,$05          unidasm: db   $ed
+undocumented/empty: D718 ed           EASM: DB ED,$06          unidasm: db   $ed
+undocumented/empty: D71C ed           EASM: DB ED,$07          unidasm: db   $ed
+undocumented/empty: D720 ed           EASM: DB ED,$08          unidasm: db   $ed
+undocumented/empty: D724 ed           EASM: DB ED,$09          unidasm: db   $ed
+undocumented/empty: D728 ed           EASM: DB ED,$0A          unidasm: db   $ed
+undocumented/empty: D72C ed           EASM: DB ED,$0B          unidasm: db   $ed
+undocumented/empty: D730 ed           EASM: DB ED,$0C          unidasm: db   $ed
+undocumented/empty: D734 ed           EASM: DB ED,$0D          unidasm: db   $ed
+undocumented/empty: D738 ed           EASM: DB ED,$0E          unidasm: db   $ed
+undocumented/empty: D73C ed           EASM: DB ED,$0F          unidasm: db   $ed
+undocumented/empty: D740 ed           EASM: DB ED,$10          unidasm: db   $ed
+undocumented/empty: D744 ed           EASM: DB ED,$11          unidasm: db   $ed
+undocumented/empty: D748 ed           EASM: DB ED,$12          unidasm: db   $ed
+undocumented/empty: D74C ed           EASM: DB ED,$13          unidasm: db   $ed
+undocumented/empty: D750 ed           EASM: DB ED,$14          unidasm: db   $ed
+undocumented/empty: D754 ed           EASM: DB ED,$15          unidasm: db   $ed
+undocumented/empty: D758 ed           EASM: DB ED,$16          unidasm: db   $ed
+undocumented/empty: D75C ed           EASM: DB ED,$17          unidasm: db   $ed
+undocumented/empty: D760 ed           EASM: DB ED,$18          unidasm: db   $ed
+undocumented/empty: D764 ed           EASM: DB ED,$19          unidasm: db   $ed
+undocumented/empty: D768 ed           EASM: DB ED,$1A          unidasm: db   $ed
+undocumented/empty: D76C ed           EASM: DB ED,$1B          unidasm: db   $ed
+undocumented/empty: D770 ed           EASM: DB ED,$1C          unidasm: db   $ed
+undocumented/empty: D774 ed           EASM: DB ED,$1D          unidasm: db   $ed
+undocumented/empty: D778 ed           EASM: DB ED,$1E          unidasm: db   $ed
+undocumented/empty: D77C ed           EASM: DB ED,$1F          unidasm: db   $ed
+undocumented/empty: D780 ed           EASM: DB ED,$20          unidasm: db   $ed
+undocumented/empty: D784 ed           EASM: DB ED,$21          unidasm: db   $ed
+undocumented/empty: D788 ed           EASM: DB ED,$22          unidasm: db   $ed
+undocumented/empty: D78C ed           EASM: DB ED,$23          unidasm: db   $ed
+undocumented/empty: D790 ed           EASM: DB ED,$24          unidasm: db   $ed
+undocumented/empty: D794 ed           EASM: DB ED,$25          unidasm: db   $ed
+undocumented/empty: D798 ed           EASM: DB ED,$26          unidasm: db   $ed
+undocumented/empty: D79C ed           EASM: DB ED,$27          unidasm: db   $ed
+undocumented/empty: D7A0 ed           EASM: DB ED,$28          unidasm: db   $ed
+undocumented/empty: D7A4 ed           EASM: DB ED,$29          unidasm: db   $ed
+undocumented/empty: D7A8 ed           EASM: DB ED,$2A          unidasm: db   $ed
+undocumented/empty: D7AC ed           EASM: DB ED,$2B          unidasm: db   $ed
+undocumented/empty: D7B0 ed           EASM: DB ED,$2C          unidasm: db   $ed
+undocumented/empty: D7B4 ed           EASM: DB ED,$2D          unidasm: db   $ed
+undocumented/empty: D7B8 ed           EASM: DB ED,$2E          unidasm: db   $ed
+undocumented/empty: D7BC ed           EASM: DB ED,$2F          unidasm: db   $ed
+undocumented/empty: D7C0 ed           EASM: DB ED,$30          unidasm: db   $ed
+undocumented/empty: D7C4 ed           EASM: DB ED,$31          unidasm: db   $ed
+undocumented/empty: D7C8 ed           EASM: DB ED,$32          unidasm: db   $ed
+undocumented/empty: D7CC ed           EASM: DB ED,$33          unidasm: db   $ed
+undocumented/empty: D7D0 ed           EASM: DB ED,$34          unidasm: db   $ed
+undocumented/empty: D7D4 ed           EASM: DB ED,$35          unidasm: db   $ed
+undocumented/empty: D7D8 ed           EASM: DB ED,$36          unidasm: db   $ed
+undocumented/empty: D7DC ed           EASM: DB ED,$37          unidasm: db   $ed
+undocumented/empty: D7E0 ed           EASM: DB ED,$38          unidasm: db   $ed
+undocumented/empty: D7E4 ed           EASM: DB ED,$39          unidasm: db   $ed
+undocumented/empty: D7E8 ed           EASM: DB ED,$3A          unidasm: db   $ed
+undocumented/empty: D7EC ed           EASM: DB ED,$3B          unidasm: db   $ed
+undocumented/empty: D7F0 ed           EASM: DB ED,$3C          unidasm: db   $ed
+undocumented/empty: D7F4 ed           EASM: DB ED,$3D          unidasm: db   $ed
+undocumented/empty: D7F8 ed           EASM: DB ED,$3E          unidasm: db   $ed
+undocumented/empty: D030 ed 4c        EASM: NEG                unidasm: neg  *
+undocumented/empty: D050 ed 54        EASM: NEG                unidasm: neg  *
+undocumented/empty: D070 ed 5c        EASM: NEG                unidasm: neg  *
+undocumented/empty: D074 ed 5d        EASM: RETN               unidasm: reti
+undocumented/empty: D090 ed 64        EASM: NEG                unidasm: neg  *
+undocumented/empty: D0B0 ed 6c        EASM: NEG                unidasm: neg  *
+undocumented/empty: D0B4 ed 6d        EASM: RETN               unidasm: reti
+undocumented/empty: D0C0 ed 70        EASM: IN F,(C)           unidasm: in   0,(c)
+undocumented/empty: D0D0 ed 74        EASM: NEG                unidasm: neg  *
+undocumented/empty: D0DC ed           EASM: NOP                unidasm: db   $ed
+undocumented/empty: D0F0 ed 7c        EASM: NEG                unidasm: neg  *
+undocumented/empty: D0F4 ed 7d        EASM: RETN               unidasm: reti
+undocumented/empty: D0FC ed           EASM: NOP                unidasm: db   $ed
+undocumented/empty: D100 ed           EASM: DB ED,$80          unidasm: db   $ed
+undocumented/empty: D104 ed           EASM: DB ED,$81          unidasm: db   $ed
+undocumented/empty: D108 ed           EASM: DB ED,$82          unidasm: db   $ed
+undocumented/empty: D10C ed           EASM: DB ED,$83          unidasm: db   $ed
+undocumented/empty: D110 ed           EASM: DB ED,$84          unidasm: db   $ed
+undocumented/empty: D114 ed           EASM: DB ED,$85          unidasm: db   $ed
+undocumented/empty: D118 ed           EASM: DB ED,$86          unidasm: db   $ed
+undocumented/empty: D11C ed           EASM: DB ED,$87          unidasm: db   $ed
+undocumented/empty: D120 ed           EASM: DB ED,$88          unidasm: db   $ed
+undocumented/empty: D124 ed           EASM: DB ED,$89          unidasm: db   $ed
+undocumented/empty: D128 ed           EASM: DB ED,$8A          unidasm: db   $ed
+undocumented/empty: D12C ed           EASM: DB ED,$8B          unidasm: db   $ed
+undocumented/empty: D130 ed           EASM: DB ED,$8C          unidasm: db   $ed
+undocumented/empty: D134 ed           EASM: DB ED,$8D          unidasm: db   $ed
+undocumented/empty: D138 ed           EASM: DB ED,$8E          unidasm: db   $ed
+undocumented/empty: D13C ed           EASM: DB ED,$8F          unidasm: db   $ed
+undocumented/empty: D140 ed           EASM: DB ED,$90          unidasm: db   $ed
+undocumented/empty: D144 ed           EASM: DB ED,$91          unidasm: db   $ed
+undocumented/empty: D148 ed           EASM: DB ED,$92          unidasm: db   $ed
+undocumented/empty: D14C ed           EASM: DB ED,$93          unidasm: db   $ed
+undocumented/empty: D150 ed           EASM: DB ED,$94          unidasm: db   $ed
+undocumented/empty: D154 ed           EASM: DB ED,$95          unidasm: db   $ed
+undocumented/empty: D158 ed           EASM: DB ED,$96          unidasm: db   $ed
+undocumented/empty: D15C ed           EASM: DB ED,$97          unidasm: db   $ed
+undocumented/empty: D160 ed           EASM: DB ED,$98          unidasm: db   $ed
+undocumented/empty: D164 ed           EASM: DB ED,$99          unidasm: db   $ed
+undocumented/empty: D168 ed           EASM: DB ED,$9A          unidasm: db   $ed
+undocumented/empty: D16C ed           EASM: DB ED,$9B          unidasm: db   $ed
+undocumented/empty: D170 ed           EASM: DB ED,$9C          unidasm: db   $ed
+undocumented/empty: D174 ed           EASM: DB ED,$9D          unidasm: db   $ed
+undocumented/empty: D178 ed           EASM: DB ED,$9E          unidasm: db   $ed
+undocumented/empty: D17C ed           EASM: DB ED,$9F          unidasm: db   $ed
+undocumented/empty: D190 ed           EASM: DB ED,$A4          unidasm: db   $ed
+undocumented/empty: D194 ed           EASM: DB ED,$A5          unidasm: db   $ed
+undocumented/empty: D198 ed           EASM: DB ED,$A6          unidasm: db   $ed
+undocumented/empty: D19C ed           EASM: DB ED,$A7          unidasm: db   $ed
+undocumented/empty: D1B0 ed           EASM: DB ED,$AC          unidasm: db   $ed
+undocumented/empty: D1B4 ed           EASM: DB ED,$AD          unidasm: db   $ed
+undocumented/empty: D1B8 ed           EASM: DB ED,$AE          unidasm: db   $ed
+undocumented/empty: D1BC ed           EASM: DB ED,$AF          unidasm: db   $ed
+undocumented/empty: D1D0 ed           EASM: DB ED,$B4          unidasm: db   $ed
+undocumented/empty: D1D4 ed           EASM: DB ED,$B5          unidasm: db   $ed
+undocumented/empty: D1D8 ed           EASM: DB ED,$B6          unidasm: db   $ed
+undocumented/empty: D1DC ed           EASM: DB ED,$B7          unidasm: db   $ed
+undocumented/empty: D1F0 ed           EASM: DB ED,$BC          unidasm: db   $ed
+undocumented/empty: D1F4 ed           EASM: DB ED,$BD          unidasm: db   $ed
+undocumented/empty: D1F8 ed           EASM: DB ED,$BE          unidasm: db   $ed
+undocumented/empty: D1FC ed           EASM: DB ED,$BF          unidasm: db   $ed
+undocumented/empty: D200 ed           EASM: DB ED,$C0          unidasm: db   $ed
+undocumented/empty: D204 ed           EASM: DB ED,$C1          unidasm: db   $ed
+undocumented/empty: D208 ed           EASM: DB ED,$C2          unidasm: db   $ed
+undocumented/empty: D20C ed           EASM: DB ED,$C3          unidasm: db   $ed
+undocumented/empty: D210 ed           EASM: DB ED,$C4          unidasm: db   $ed
+undocumented/empty: D214 ed           EASM: DB ED,$C5          unidasm: db   $ed
+undocumented/empty: D218 ed           EASM: DB ED,$C6          unidasm: db   $ed
+undocumented/empty: D21C ed           EASM: DB ED,$C7          unidasm: db   $ed
+undocumented/empty: D220 ed           EASM: DB ED,$C8          unidasm: db   $ed
+undocumented/empty: D224 ed           EASM: DB ED,$C9          unidasm: db   $ed
+undocumented/empty: D228 ed           EASM: DB ED,$CA          unidasm: db   $ed
+undocumented/empty: D22C ed           EASM: DB ED,$CB          unidasm: db   $ed
+undocumented/empty: D230 ed           EASM: DB ED,$CC          unidasm: db   $ed
+undocumented/empty: D234 ed           EASM: DB ED,$CD          unidasm: db   $ed
+undocumented/empty: D238 ed           EASM: DB ED,$CE          unidasm: db   $ed
+undocumented/empty: D23C ed           EASM: DB ED,$CF          unidasm: db   $ed
+undocumented/empty: D240 ed           EASM: DB ED,$D0          unidasm: db   $ed
+undocumented/empty: D244 ed           EASM: DB ED,$D1          unidasm: db   $ed
+undocumented/empty: D248 ed           EASM: DB ED,$D2          unidasm: db   $ed
+undocumented/empty: D24C ed           EASM: DB ED,$D3          unidasm: db   $ed
+undocumented/empty: D250 ed           EASM: DB ED,$D4          unidasm: db   $ed
+undocumented/empty: D254 ed           EASM: DB ED,$D5          unidasm: db   $ed
+undocumented/empty: D258 ed           EASM: DB ED,$D6          unidasm: db   $ed
+undocumented/empty: D25C ed           EASM: DB ED,$D7          unidasm: db   $ed
+undocumented/empty: D260 ed           EASM: DB ED,$D8          unidasm: db   $ed
+undocumented/empty: D264 ed           EASM: DB ED,$D9          unidasm: db   $ed
+undocumented/empty: D268 ed           EASM: DB ED,$DA          unidasm: db   $ed
+undocumented/empty: D26C ed           EASM: DB ED,$DB          unidasm: db   $ed
+undocumented/empty: D270 ed           EASM: DB ED,$DC          unidasm: db   $ed
+undocumented/empty: D274 ed           EASM: DB ED,$DD          unidasm: db   $ed
+undocumented/empty: D278 ed           EASM: DB ED,$DE          unidasm: db   $ed
+undocumented/empty: D27C ed           EASM: DB ED,$DF          unidasm: db   $ed
+undocumented/empty: D280 ed           EASM: DB ED,$E0          unidasm: db   $ed
+undocumented/empty: D284 ed           EASM: DB ED,$E1          unidasm: db   $ed
+undocumented/empty: D288 ed           EASM: DB ED,$E2          unidasm: db   $ed
+undocumented/empty: D28C ed           EASM: DB ED,$E3          unidasm: db   $ed
+undocumented/empty: D290 ed           EASM: DB ED,$E4          unidasm: db   $ed
+undocumented/empty: D294 ed           EASM: DB ED,$E5          unidasm: db   $ed
+undocumented/empty: D298 ed           EASM: DB ED,$E6          unidasm: db   $ed
+undocumented/empty: D29C ed           EASM: DB ED,$E7          unidasm: db   $ed
+undocumented/empty: D2A0 ed           EASM: DB ED,$E8          unidasm: db   $ed
+undocumented/empty: D2A4 ed           EASM: DB ED,$E9          unidasm: db   $ed
+undocumented/empty: D2A8 ed           EASM: DB ED,$EA          unidasm: db   $ed
+undocumented/empty: D2AC ed           EASM: DB ED,$EB          unidasm: db   $ed
+undocumented/empty: D2B0 ed           EASM: DB ED,$EC          unidasm: db   $ed
+undocumented/empty: D2B4 ed           EASM: DB ED,$ED          unidasm: db   $ed
+undocumented/empty: D2B8 ed           EASM: DB ED,$EE          unidasm: db   $ed
+undocumented/empty: D2BC ed           EASM: DB ED,$EF          unidasm: db   $ed
+undocumented/empty: D2C0 ed           EASM: DB ED,$F0          unidasm: db   $ed
+undocumented/empty: D2C4 ed           EASM: DB ED,$F1          unidasm: db   $ed
+undocumented/empty: D2C8 ed           EASM: DB ED,$F2          unidasm: db   $ed
+undocumented/empty: D2CC ed           EASM: DB ED,$F3          unidasm: db   $ed
+undocumented/empty: D2D0 ed           EASM: DB ED,$F4          unidasm: db   $ed
+undocumented/empty: D2D4 ed           EASM: DB ED,$F5          unidasm: db   $ed
+undocumented/empty: D2D8 ed           EASM: DB ED,$F6          unidasm: db   $ed
+undocumented/empty: D2DC ed           EASM: DB ED,$F7          unidasm: db   $ed
+undocumented/empty: D2E0 ed           EASM: DB ED,$F8          unidasm: db   $ed
+undocumented/empty: D2E4 ed           EASM: DB ED,$F9          unidasm: db   $ed
+undocumented/empty: D2E8 ed           EASM: DB ED,$FA          unidasm: db   $ed
+undocumented/empty: D2EC ed           EASM: DB ED,$FB          unidasm: db   $ed
+undocumented/empty: D2F0 ed           EASM: DB ED,$FC          unidasm: db   $ed
+undocumented/empty: D2F4 ed           EASM: DB ED,$FD          unidasm: db   $ed
+undocumented/empty: D2F8 ed           EASM: DB ED,$FE          unidasm: db   $ed
+undocumented/empty: D2FC ed           EASM: DB ED,$FF          unidasm: db   $ed
+undocumented/empty: D62C dd cb 00 00  EASM: RLC (IX+$00)       unidasm: rlc  b=(ix+$00)
+undocumented/empty: D6B5 ed           EASM: DB ED,$00          unidasm: db   $ed
+undocumented/empty: D22C fd cb 00 00  EASM: RLC (IY+$00)       unidasm: rlc  b=(iy+$00)
+undocumented/empty: D2B5 ed           EASM: DB ED,$00          unidasm: db   $ed
+undocumented/empty: D300 dd cb 05 00  EASM: RLC (IX+$05)       unidasm: rlc  b=(ix+$05)
+undocumented/empty: D306 dd cb 05 01  EASM: RLC (IX+$05)       unidasm: rlc  c=(ix+$05)
+undocumented/empty: D30C dd cb 05 02  EASM: RLC (IX+$05)       unidasm: rlc  d=(ix+$05)
+undocumented/empty: D312 dd cb 05 03  EASM: RLC (IX+$05)       unidasm: rlc  e=(ix+$05)
+undocumented/empty: D318 dd cb 05 04  EASM: RLC (IX+$05)       unidasm: rlc  h=(ix+$05)
+undocumented/empty: D31E dd cb 05 05  EASM: RLC (IX+$05)       unidasm: rlc  l=(ix+$05)
+undocumented/empty: D32A dd cb 05 07  EASM: RLC (IX+$05)       unidasm: rlc  a=(ix+$05)
+undocumented/empty: D330 dd cb 05 08  EASM: RRC (IX+$05)       unidasm: rrc  b=(ix+$05)
+undocumented/empty: D336 dd cb 05 09  EASM: RRC (IX+$05)       unidasm: rrc  c=(ix+$05)
+undocumented/empty: D33C dd cb 05 0a  EASM: RRC (IX+$05)       unidasm: rrc  d=(ix+$05)
+undocumented/empty: D342 dd cb 05 0b  EASM: RRC (IX+$05)       unidasm: rrc  e=(ix+$05)
+undocumented/empty: D348 dd cb 05 0c  EASM: RRC (IX+$05)       unidasm: rrc  h=(ix+$05)
+undocumented/empty: D34E dd cb 05 0d  EASM: RRC (IX+$05)       unidasm: rrc  l=(ix+$05)
+undocumented/empty: D35A dd cb 05 0f  EASM: RRC (IX+$05)       unidasm: rrc  a=(ix+$05)
+undocumented/empty: D360 dd cb 05 10  EASM: RL (IX+$05)        unidasm: rl   b=(ix+$05)
+undocumented/empty: D366 dd cb 05 11  EASM: RL (IX+$05)        unidasm: rl   c=(ix+$05)
+undocumented/empty: D36C dd cb 05 12  EASM: RL (IX+$05)        unidasm: rl   d=(ix+$05)
+undocumented/empty: D372 dd cb 05 13  EASM: RL (IX+$05)        unidasm: rl   e=(ix+$05)
+undocumented/empty: D378 dd cb 05 14  EASM: RL (IX+$05)        unidasm: rl   h=(ix+$05)
+undocumented/empty: D37E dd cb 05 15  EASM: RL (IX+$05)        unidasm: rl   l=(ix+$05)
+undocumented/empty: D38A dd cb 05 17  EASM: RL (IX+$05)        unidasm: rl   a=(ix+$05)
+undocumented/empty: D390 dd cb 05 18  EASM: RR (IX+$05)        unidasm: rr   b=(ix+$05)
+undocumented/empty: D396 dd cb 05 19  EASM: RR (IX+$05)        unidasm: rr   c=(ix+$05)
+undocumented/empty: D39C dd cb 05 1a  EASM: RR (IX+$05)        unidasm: rr   d=(ix+$05)
+undocumented/empty: D3A2 dd cb 05 1b  EASM: RR (IX+$05)        unidasm: rr   e=(ix+$05)
+undocumented/empty: D3A8 dd cb 05 1c  EASM: RR (IX+$05)        unidasm: rr   h=(ix+$05)
+undocumented/empty: D3AE dd cb 05 1d  EASM: RR (IX+$05)        unidasm: rr   l=(ix+$05)
+undocumented/empty: D3BA dd cb 05 1f  EASM: RR (IX+$05)        unidasm: rr   a=(ix+$05)
+undocumented/empty: D3C0 dd cb 05 20  EASM: SLA (IX+$05)       unidasm: sla  b=(ix+$05)
+undocumented/empty: D3C6 dd cb 05 21  EASM: SLA (IX+$05)       unidasm: sla  c=(ix+$05)
+undocumented/empty: D3CC dd cb 05 22  EASM: SLA (IX+$05)       unidasm: sla  d=(ix+$05)
+undocumented/empty: D3D2 dd cb 05 23  EASM: SLA (IX+$05)       unidasm: sla  e=(ix+$05)
+undocumented/empty: D3D8 dd cb 05 24  EASM: SLA (IX+$05)       unidasm: sla  h=(ix+$05)
+undocumented/empty: D3DE dd cb 05 25  EASM: SLA (IX+$05)       unidasm: sla  l=(ix+$05)
+undocumented/empty: D3EA dd cb 05 27  EASM: SLA (IX+$05)       unidasm: sla  a=(ix+$05)
+undocumented/empty: D3F0 dd cb 05 28  EASM: SRA (IX+$05)       unidasm: sra  b=(ix+$05)
+undocumented/empty: D3F6 dd cb 05 29  EASM: SRA (IX+$05)       unidasm: sra  c=(ix+$05)
+undocumented/empty: D3FC dd cb 05 2a  EASM: SRA (IX+$05)       unidasm: sra  d=(ix+$05)
+undocumented/empty: D402 dd cb 05 2b  EASM: SRA (IX+$05)       unidasm: sra  e=(ix+$05)
+undocumented/empty: D408 dd cb 05 2c  EASM: SRA (IX+$05)       unidasm: sra  h=(ix+$05)
+undocumented/empty: D40E dd cb 05 2d  EASM: SRA (IX+$05)       unidasm: sra  l=(ix+$05)
+undocumented/empty: D41A dd cb 05 2f  EASM: SRA (IX+$05)       unidasm: sra  a=(ix+$05)
+undocumented/empty: D420 dd cb 05 30  EASM: SLL (IX+$05)       unidasm: sll  b=(ix+$05)
+undocumented/empty: D426 dd cb 05 31  EASM: SLL (IX+$05)       unidasm: sll  c=(ix+$05)
+undocumented/empty: D42C dd cb 05 32  EASM: SLL (IX+$05)       unidasm: sll  d=(ix+$05)
+undocumented/empty: D432 dd cb 05 33  EASM: SLL (IX+$05)       unidasm: sll  e=(ix+$05)
+undocumented/empty: D438 dd cb 05 34  EASM: SLL (IX+$05)       unidasm: sll  h=(ix+$05)
+undocumented/empty: D43E dd cb 05 35  EASM: SLL (IX+$05)       unidasm: sll  l=(ix+$05)
+undocumented/empty: D44A dd cb 05 37  EASM: SLL (IX+$05)       unidasm: sll  a=(ix+$05)
+undocumented/empty: D450 dd cb 05 38  EASM: SRL (IX+$05)       unidasm: srl  b=(ix+$05)
+undocumented/empty: D456 dd cb 05 39  EASM: SRL (IX+$05)       unidasm: srl  c=(ix+$05)
+undocumented/empty: D45C dd cb 05 3a  EASM: SRL (IX+$05)       unidasm: srl  d=(ix+$05)
+undocumented/empty: D462 dd cb 05 3b  EASM: SRL (IX+$05)       unidasm: srl  e=(ix+$05)
+undocumented/empty: D468 dd cb 05 3c  EASM: SRL (IX+$05)       unidasm: srl  h=(ix+$05)
+undocumented/empty: D46E dd cb 05 3d  EASM: SRL (IX+$05)       unidasm: srl  l=(ix+$05)
+undocumented/empty: D47A dd cb 05 3f  EASM: SRL (IX+$05)       unidasm: srl  a=(ix+$05)
+undocumented/empty: D480 dd cb 05 40  EASM: BIT 0,(IX+$05)     unidasm: bit  b=0,(ix+$05)
+undocumented/empty: D486 dd cb 05 41  EASM: BIT 0,(IX+$05)     unidasm: bit  c=0,(ix+$05)
+undocumented/empty: D48C dd cb 05 42  EASM: BIT 0,(IX+$05)     unidasm: bit  d=0,(ix+$05)
+undocumented/empty: D492 dd cb 05 43  EASM: BIT 0,(IX+$05)     unidasm: bit  e=0,(ix+$05)
+undocumented/empty: D498 dd cb 05 44  EASM: BIT 0,(IX+$05)     unidasm: bit  h=0,(ix+$05)
+undocumented/empty: D49E dd cb 05 45  EASM: BIT 0,(IX+$05)     unidasm: bit  l=0,(ix+$05)
+undocumented/empty: D4AA dd cb 05 47  EASM: BIT 0,(IX+$05)     unidasm: bit  a=0,(ix+$05)
+undocumented/empty: D4B0 dd cb 05 48  EASM: BIT 1,(IX+$05)     unidasm: bit  b=1,(ix+$05)
+undocumented/empty: D4B6 dd cb 05 49  EASM: BIT 1,(IX+$05)     unidasm: bit  c=1,(ix+$05)
+undocumented/empty: D4BC dd cb 05 4a  EASM: BIT 1,(IX+$05)     unidasm: bit  d=1,(ix+$05)
+undocumented/empty: D4C2 dd cb 05 4b  EASM: BIT 1,(IX+$05)     unidasm: bit  e=1,(ix+$05)
+undocumented/empty: D4C8 dd cb 05 4c  EASM: BIT 1,(IX+$05)     unidasm: bit  h=1,(ix+$05)
+undocumented/empty: D4CE dd cb 05 4d  EASM: BIT 1,(IX+$05)     unidasm: bit  l=1,(ix+$05)
+undocumented/empty: D4DA dd cb 05 4f  EASM: BIT 1,(IX+$05)     unidasm: bit  a=1,(ix+$05)
+undocumented/empty: D4E0 dd cb 05 50  EASM: BIT 2,(IX+$05)     unidasm: bit  b=2,(ix+$05)
+undocumented/empty: D4E6 dd cb 05 51  EASM: BIT 2,(IX+$05)     unidasm: bit  c=2,(ix+$05)
+undocumented/empty: D4EC dd cb 05 52  EASM: BIT 2,(IX+$05)     unidasm: bit  d=2,(ix+$05)
+undocumented/empty: D4F2 dd cb 05 53  EASM: BIT 2,(IX+$05)     unidasm: bit  e=2,(ix+$05)
+undocumented/empty: D4F8 dd cb 05 54  EASM: BIT 2,(IX+$05)     unidasm: bit  h=2,(ix+$05)
+undocumented/empty: D4FE dd cb 05 55  EASM: BIT 2,(IX+$05)     unidasm: bit  l=2,(ix+$05)
+undocumented/empty: D50A dd cb 05 57  EASM: BIT 2,(IX+$05)     unidasm: bit  a=2,(ix+$05)
+undocumented/empty: D510 dd cb 05 58  EASM: BIT 3,(IX+$05)     unidasm: bit  b=3,(ix+$05)
+undocumented/empty: D516 dd cb 05 59  EASM: BIT 3,(IX+$05)     unidasm: bit  c=3,(ix+$05)
+undocumented/empty: D51C dd cb 05 5a  EASM: BIT 3,(IX+$05)     unidasm: bit  d=3,(ix+$05)
+undocumented/empty: D522 dd cb 05 5b  EASM: BIT 3,(IX+$05)     unidasm: bit  e=3,(ix+$05)
+undocumented/empty: D528 dd cb 05 5c  EASM: BIT 3,(IX+$05)     unidasm: bit  h=3,(ix+$05)
+undocumented/empty: D52E dd cb 05 5d  EASM: BIT 3,(IX+$05)     unidasm: bit  l=3,(ix+$05)
+undocumented/empty: D53A dd cb 05 5f  EASM: BIT 3,(IX+$05)     unidasm: bit  a=3,(ix+$05)
+undocumented/empty: D540 dd cb 05 60  EASM: BIT 4,(IX+$05)     unidasm: bit  b=4,(ix+$05)
+undocumented/empty: D546 dd cb 05 61  EASM: BIT 4,(IX+$05)     unidasm: bit  c=4,(ix+$05)
+undocumented/empty: D54C dd cb 05 62  EASM: BIT 4,(IX+$05)     unidasm: bit  d=4,(ix+$05)
+undocumented/empty: D552 dd cb 05 63  EASM: BIT 4,(IX+$05)     unidasm: bit  e=4,(ix+$05)
+undocumented/empty: D558 dd cb 05 64  EASM: BIT 4,(IX+$05)     unidasm: bit  h=4,(ix+$05)
+undocumented/empty: D55E dd cb 05 65  EASM: BIT 4,(IX+$05)     unidasm: bit  l=4,(ix+$05)
+undocumented/empty: D56A dd cb 05 67  EASM: BIT 4,(IX+$05)     unidasm: bit  a=4,(ix+$05)
+undocumented/empty: D570 dd cb 05 68  EASM: BIT 5,(IX+$05)     unidasm: bit  b=5,(ix+$05)
+undocumented/empty: D576 dd cb 05 69  EASM: BIT 5,(IX+$05)     unidasm: bit  c=5,(ix+$05)
+undocumented/empty: D57C dd cb 05 6a  EASM: BIT 5,(IX+$05)     unidasm: bit  d=5,(ix+$05)
+undocumented/empty: D582 dd cb 05 6b  EASM: BIT 5,(IX+$05)     unidasm: bit  e=5,(ix+$05)
+undocumented/empty: D588 dd cb 05 6c  EASM: BIT 5,(IX+$05)     unidasm: bit  h=5,(ix+$05)
+undocumented/empty: D58E dd cb 05 6d  EASM: BIT 5,(IX+$05)     unidasm: bit  l=5,(ix+$05)
+undocumented/empty: D59A dd cb 05 6f  EASM: BIT 5,(IX+$05)     unidasm: bit  a=5,(ix+$05)
+undocumented/empty: D5A0 dd cb 05 70  EASM: BIT 6,(IX+$05)     unidasm: bit  b=6,(ix+$05)
+undocumented/empty: D5A6 dd cb 05 71  EASM: BIT 6,(IX+$05)     unidasm: bit  c=6,(ix+$05)
+undocumented/empty: D5AC dd cb 05 72  EASM: BIT 6,(IX+$05)     unidasm: bit  d=6,(ix+$05)
+undocumented/empty: D5B2 dd cb 05 73  EASM: BIT 6,(IX+$05)     unidasm: bit  e=6,(ix+$05)
+undocumented/empty: D5B8 dd cb 05 74  EASM: BIT 6,(IX+$05)     unidasm: bit  h=6,(ix+$05)
+undocumented/empty: D5BE dd cb 05 75  EASM: BIT 6,(IX+$05)     unidasm: bit  l=6,(ix+$05)
+undocumented/empty: D5CA dd cb 05 77  EASM: BIT 6,(IX+$05)     unidasm: bit  a=6,(ix+$05)
+undocumented/empty: D5D0 dd cb 05 78  EASM: BIT 7,(IX+$05)     unidasm: bit  b=7,(ix+$05)
+undocumented/empty: D5D6 dd cb 05 79  EASM: BIT 7,(IX+$05)     unidasm: bit  c=7,(ix+$05)
+undocumented/empty: D5DC dd cb 05 7a  EASM: BIT 7,(IX+$05)     unidasm: bit  d=7,(ix+$05)
+undocumented/empty: D5E2 dd cb 05 7b  EASM: BIT 7,(IX+$05)     unidasm: bit  e=7,(ix+$05)
+undocumented/empty: D5E8 dd cb 05 7c  EASM: BIT 7,(IX+$05)     unidasm: bit  h=7,(ix+$05)
+undocumented/empty: D5EE dd cb 05 7d  EASM: BIT 7,(IX+$05)     unidasm: bit  l=7,(ix+$05)
+undocumented/empty: D5FA dd cb 05 7f  EASM: BIT 7,(IX+$05)     unidasm: bit  a=7,(ix+$05)
+undocumented/empty: D600 dd cb 05 80  EASM: RES 0,(IX+$05)     unidasm: res  b=0,(ix+$05)
+undocumented/empty: D606 dd cb 05 81  EASM: RES 0,(IX+$05)     unidasm: res  c=0,(ix+$05)
+undocumented/empty: D60C dd cb 05 82  EASM: RES 0,(IX+$05)     unidasm: res  d=0,(ix+$05)
+undocumented/empty: D612 dd cb 05 83  EASM: RES 0,(IX+$05)     unidasm: res  e=0,(ix+$05)
+undocumented/empty: D618 dd cb 05 84  EASM: RES 0,(IX+$05)     unidasm: res  h=0,(ix+$05)
+undocumented/empty: D61E dd cb 05 85  EASM: RES 0,(IX+$05)     unidasm: res  l=0,(ix+$05)
+undocumented/empty: D62A dd cb 05 87  EASM: RES 0,(IX+$05)     unidasm: res  a=0,(ix+$05)
+undocumented/empty: D630 dd cb 05 88  EASM: RES 1,(IX+$05)     unidasm: res  b=1,(ix+$05)
+undocumented/empty: D636 dd cb 05 89  EASM: RES 1,(IX+$05)     unidasm: res  c=1,(ix+$05)
+undocumented/empty: D63C dd cb 05 8a  EASM: RES 1,(IX+$05)     unidasm: res  d=1,(ix+$05)
+undocumented/empty: D642 dd cb 05 8b  EASM: RES 1,(IX+$05)     unidasm: res  e=1,(ix+$05)
+undocumented/empty: D648 dd cb 05 8c  EASM: RES 1,(IX+$05)     unidasm: res  h=1,(ix+$05)
+undocumented/empty: D64E dd cb 05 8d  EASM: RES 1,(IX+$05)     unidasm: res  l=1,(ix+$05)
+undocumented/empty: D65A dd cb 05 8f  EASM: RES 1,(IX+$05)     unidasm: res  a=1,(ix+$05)
+undocumented/empty: D660 dd cb 05 90  EASM: RES 2,(IX+$05)     unidasm: res  b=2,(ix+$05)
+undocumented/empty: D666 dd cb 05 91  EASM: RES 2,(IX+$05)     unidasm: res  c=2,(ix+$05)
+undocumented/empty: D66C dd cb 05 92  EASM: RES 2,(IX+$05)     unidasm: res  d=2,(ix+$05)
+undocumented/empty: D672 dd cb 05 93  EASM: RES 2,(IX+$05)     unidasm: res  e=2,(ix+$05)
+undocumented/empty: D678 dd cb 05 94  EASM: RES 2,(IX+$05)     unidasm: res  h=2,(ix+$05)
+undocumented/empty: D67E dd cb 05 95  EASM: RES 2,(IX+$05)     unidasm: res  l=2,(ix+$05)
+undocumented/empty: D68A dd cb 05 97  EASM: RES 2,(IX+$05)     unidasm: res  a=2,(ix+$05)
+undocumented/empty: D690 dd cb 05 98  EASM: RES 3,(IX+$05)     unidasm: res  b=3,(ix+$05)
+undocumented/empty: D696 dd cb 05 99  EASM: RES 3,(IX+$05)     unidasm: res  c=3,(ix+$05)
+undocumented/empty: D69C dd cb 05 9a  EASM: RES 3,(IX+$05)     unidasm: res  d=3,(ix+$05)
+undocumented/empty: D6A2 dd cb 05 9b  EASM: RES 3,(IX+$05)     unidasm: res  e=3,(ix+$05)
+undocumented/empty: D6A8 dd cb 05 9c  EASM: RES 3,(IX+$05)     unidasm: res  h=3,(ix+$05)
+undocumented/empty: D6AE dd cb 05 9d  EASM: RES 3,(IX+$05)     unidasm: res  l=3,(ix+$05)
+undocumented/empty: D6BA dd cb 05 9f  EASM: RES 3,(IX+$05)     unidasm: res  a=3,(ix+$05)
+undocumented/empty: D6C0 dd cb 05 a0  EASM: RES 4,(IX+$05)     unidasm: res  b=4,(ix+$05)
+undocumented/empty: D6C6 dd cb 05 a1  EASM: RES 4,(IX+$05)     unidasm: res  c=4,(ix+$05)
+undocumented/empty: D6CC dd cb 05 a2  EASM: RES 4,(IX+$05)     unidasm: res  d=4,(ix+$05)
+undocumented/empty: D6D2 dd cb 05 a3  EASM: RES 4,(IX+$05)     unidasm: res  e=4,(ix+$05)
+undocumented/empty: D6D8 dd cb 05 a4  EASM: RES 4,(IX+$05)     unidasm: res  h=4,(ix+$05)
+undocumented/empty: D6DE dd cb 05 a5  EASM: RES 4,(IX+$05)     unidasm: res  l=4,(ix+$05)
+undocumented/empty: D6EA dd cb 05 a7  EASM: RES 4,(IX+$05)     unidasm: res  a=4,(ix+$05)
+undocumented/empty: D6F0 dd cb 05 a8  EASM: RES 5,(IX+$05)     unidasm: res  b=5,(ix+$05)
+undocumented/empty: D6F6 dd cb 05 a9  EASM: RES 5,(IX+$05)     unidasm: res  c=5,(ix+$05)
+undocumented/empty: D6FC dd cb 05 aa  EASM: RES 5,(IX+$05)     unidasm: res  d=5,(ix+$05)
+undocumented/empty: D702 dd cb 05 ab  EASM: RES 5,(IX+$05)     unidasm: res  e=5,(ix+$05)
+undocumented/empty: D708 dd cb 05 ac  EASM: RES 5,(IX+$05)     unidasm: res  h=5,(ix+$05)
+undocumented/empty: D70E dd cb 05 ad  EASM: RES 5,(IX+$05)     unidasm: res  l=5,(ix+$05)
+undocumented/empty: D71A dd cb 05 af  EASM: RES 5,(IX+$05)     unidasm: res  a=5,(ix+$05)
+undocumented/empty: D720 dd cb 05 b0  EASM: RES 6,(IX+$05)     unidasm: res  b=6,(ix+$05)
+undocumented/empty: D726 dd cb 05 b1  EASM: RES 6,(IX+$05)     unidasm: res  c=6,(ix+$05)
+undocumented/empty: D72C dd cb 05 b2  EASM: RES 6,(IX+$05)     unidasm: res  d=6,(ix+$05)
+undocumented/empty: D732 dd cb 05 b3  EASM: RES 6,(IX+$05)     unidasm: res  e=6,(ix+$05)
+undocumented/empty: D738 dd cb 05 b4  EASM: RES 6,(IX+$05)     unidasm: res  h=6,(ix+$05)
+undocumented/empty: D73E dd cb 05 b5  EASM: RES 6,(IX+$05)     unidasm: res  l=6,(ix+$05)
+undocumented/empty: D74A dd cb 05 b7  EASM: RES 6,(IX+$05)     unidasm: res  a=6,(ix+$05)
+undocumented/empty: D750 dd cb 05 b8  EASM: RES 7,(IX+$05)     unidasm: res  b=7,(ix+$05)
+undocumented/empty: D756 dd cb 05 b9  EASM: RES 7,(IX+$05)     unidasm: res  c=7,(ix+$05)
+undocumented/empty: D75C dd cb 05 ba  EASM: RES 7,(IX+$05)     unidasm: res  d=7,(ix+$05)
+undocumented/empty: D762 dd cb 05 bb  EASM: RES 7,(IX+$05)     unidasm: res  e=7,(ix+$05)
+undocumented/empty: D768 dd cb 05 bc  EASM: RES 7,(IX+$05)     unidasm: res  h=7,(ix+$05)
+undocumented/empty: D76E dd cb 05 bd  EASM: RES 7,(IX+$05)     unidasm: res  l=7,(ix+$05)
+undocumented/empty: D77A dd cb 05 bf  EASM: RES 7,(IX+$05)     unidasm: res  a=7,(ix+$05)
+undocumented/empty: D780 dd cb 05 c0  EASM: SET 0,(IX+$05)     unidasm: set  b=0,(ix+$05)
+undocumented/empty: D786 dd cb 05 c1  EASM: SET 0,(IX+$05)     unidasm: set  c=0,(ix+$05)
+undocumented/empty: D78C dd cb 05 c2  EASM: SET 0,(IX+$05)     unidasm: set  d=0,(ix+$05)
+undocumented/empty: D792 dd cb 05 c3  EASM: SET 0,(IX+$05)     unidasm: set  e=0,(ix+$05)
+undocumented/empty: D798 dd cb 05 c4  EASM: SET 0,(IX+$05)     unidasm: set  h=0,(ix+$05)
+undocumented/empty: D79E dd cb 05 c5  EASM: SET 0,(IX+$05)     unidasm: set  l=0,(ix+$05)
+undocumented/empty: D7AA dd cb 05 c7  EASM: SET 0,(IX+$05)     unidasm: set  a=0,(ix+$05)
+undocumented/empty: D7B0 dd cb 05 c8  EASM: SET 1,(IX+$05)     unidasm: set  b=1,(ix+$05)
+undocumented/empty: D7B6 dd cb 05 c9  EASM: SET 1,(IX+$05)     unidasm: set  c=1,(ix+$05)
+undocumented/empty: D7BC dd cb 05 ca  EASM: SET 1,(IX+$05)     unidasm: set  d=1,(ix+$05)
+undocumented/empty: D7C2 dd cb 05 cb  EASM: SET 1,(IX+$05)     unidasm: set  e=1,(ix+$05)
+undocumented/empty: D7C8 dd cb 05 cc  EASM: SET 1,(IX+$05)     unidasm: set  h=1,(ix+$05)
+undocumented/empty: D7CE dd cb 05 cd  EASM: SET 1,(IX+$05)     unidasm: set  l=1,(ix+$05)
+undocumented/empty: D7DA dd cb 05 cf  EASM: SET 1,(IX+$05)     unidasm: set  a=1,(ix+$05)
+undocumented/empty: D7E0 dd cb 05 d0  EASM: SET 2,(IX+$05)     unidasm: set  b=2,(ix+$05)
+undocumented/empty: D7E6 dd cb 05 d1  EASM: SET 2,(IX+$05)     unidasm: set  c=2,(ix+$05)
+undocumented/empty: D7EC dd cb 05 d2  EASM: SET 2,(IX+$05)     unidasm: set  d=2,(ix+$05)
+undocumented/empty: D7F2 dd cb 05 d3  EASM: SET 2,(IX+$05)     unidasm: set  e=2,(ix+$05)
+undocumented/empty: D7F8 dd cb 05 d4  EASM: SET 2,(IX+$05)     unidasm: set  h=2,(ix+$05)
+undocumented/empty: D00A dd cb 05 d7  EASM: SET 2,(IX+$05)     unidasm: set  a=2,(ix+$05)
+undocumented/empty: D010 dd cb 05 d8  EASM: SET 3,(IX+$05)     unidasm: set  b=3,(ix+$05)
+undocumented/empty: D016 dd cb 05 d9  EASM: SET 3,(IX+$05)     unidasm: set  c=3,(ix+$05)
+undocumented/empty: D01C dd cb 05 da  EASM: SET 3,(IX+$05)     unidasm: set  d=3,(ix+$05)
+undocumented/empty: D022 dd cb 05 db  EASM: SET 3,(IX+$05)     unidasm: set  e=3,(ix+$05)
+undocumented/empty: D028 dd cb 05 dc  EASM: SET 3,(IX+$05)     unidasm: set  h=3,(ix+$05)
+undocumented/empty: D02E dd cb 05 dd  EASM: SET 3,(IX+$05)     unidasm: set  l=3,(ix+$05)
+undocumented/empty: D03A dd cb 05 df  EASM: SET 3,(IX+$05)     unidasm: set  a=3,(ix+$05)
+undocumented/empty: D040 dd cb 05 e0  EASM: SET 4,(IX+$05)     unidasm: set  b=4,(ix+$05)
+undocumented/empty: D046 dd cb 05 e1  EASM: SET 4,(IX+$05)     unidasm: set  c=4,(ix+$05)
+undocumented/empty: D04C dd cb 05 e2  EASM: SET 4,(IX+$05)     unidasm: set  d=4,(ix+$05)
+undocumented/empty: D052 dd cb 05 e3  EASM: SET 4,(IX+$05)     unidasm: set  e=4,(ix+$05)
+undocumented/empty: D058 dd cb 05 e4  EASM: SET 4,(IX+$05)     unidasm: set  h=4,(ix+$05)
+undocumented/empty: D05E dd cb 05 e5  EASM: SET 4,(IX+$05)     unidasm: set  l=4,(ix+$05)
+undocumented/empty: D06A dd cb 05 e7  EASM: SET 4,(IX+$05)     unidasm: set  a=4,(ix+$05)
+undocumented/empty: D070 dd cb 05 e8  EASM: SET 5,(IX+$05)     unidasm: set  b=5,(ix+$05)
+undocumented/empty: D076 dd cb 05 e9  EASM: SET 5,(IX+$05)     unidasm: set  c=5,(ix+$05)
+undocumented/empty: D07C dd cb 05 ea  EASM: SET 5,(IX+$05)     unidasm: set  d=5,(ix+$05)
+undocumented/empty: D082 dd cb 05 eb  EASM: SET 5,(IX+$05)     unidasm: set  e=5,(ix+$05)
+undocumented/empty: D088 dd cb 05 ec  EASM: SET 5,(IX+$05)     unidasm: set  h=5,(ix+$05)
+undocumented/empty: D08E dd cb 05 ed  EASM: SET 5,(IX+$05)     unidasm: set  l=5,(ix+$05)
+undocumented/empty: D09A dd cb 05 ef  EASM: SET 5,(IX+$05)     unidasm: set  a=5,(ix+$05)
+undocumented/empty: D0A0 dd cb 05 f0  EASM: SET 6,(IX+$05)     unidasm: set  b=6,(ix+$05)
+undocumented/empty: D0A6 dd cb 05 f1  EASM: SET 6,(IX+$05)     unidasm: set  c=6,(ix+$05)
+undocumented/empty: D0AC dd cb 05 f2  EASM: SET 6,(IX+$05)     unidasm: set  d=6,(ix+$05)
+undocumented/empty: D0B2 dd cb 05 f3  EASM: SET 6,(IX+$05)     unidasm: set  e=6,(ix+$05)
+undocumented/empty: D0B8 dd cb 05 f4  EASM: SET 6,(IX+$05)     unidasm: set  h=6,(ix+$05)
+undocumented/empty: D0BE dd cb 05 f5  EASM: SET 6,(IX+$05)     unidasm: set  l=6,(ix+$05)
+undocumented/empty: D0CA dd cb 05 f7  EASM: SET 6,(IX+$05)     unidasm: set  a=6,(ix+$05)
+undocumented/empty: D0D0 dd cb 05 f8  EASM: SET 7,(IX+$05)     unidasm: set  b=7,(ix+$05)
+undocumented/empty: D0D6 dd cb 05 f9  EASM: SET 7,(IX+$05)     unidasm: set  c=7,(ix+$05)
+undocumented/empty: D0DC dd cb 05 fa  EASM: SET 7,(IX+$05)     unidasm: set  d=7,(ix+$05)
+undocumented/empty: D0E2 dd cb 05 fb  EASM: SET 7,(IX+$05)     unidasm: set  e=7,(ix+$05)
+undocumented/empty: D0E8 dd cb 05 fc  EASM: SET 7,(IX+$05)     unidasm: set  h=7,(ix+$05)
+undocumented/empty: D0EE dd cb 05 fd  EASM: SET 7,(IX+$05)     unidasm: set  l=7,(ix+$05)
+undocumented/empty: D0FA dd cb 05 ff  EASM: SET 7,(IX+$05)     unidasm: set  a=7,(ix+$05)
+undocumented/empty: D100 fd cb fb 00  EASM: RLC (IY-$05)       unidasm: rlc  b=(iy-$05)
+undocumented/empty: D106 fd cb fb 01  EASM: RLC (IY-$05)       unidasm: rlc  c=(iy-$05)
+undocumented/empty: D10C fd cb fb 02  EASM: RLC (IY-$05)       unidasm: rlc  d=(iy-$05)
+undocumented/empty: D112 fd cb fb 03  EASM: RLC (IY-$05)       unidasm: rlc  e=(iy-$05)
+undocumented/empty: D118 fd cb fb 04  EASM: RLC (IY-$05)       unidasm: rlc  h=(iy-$05)
+undocumented/empty: D11E fd cb fb 05  EASM: RLC (IY-$05)       unidasm: rlc  l=(iy-$05)
+undocumented/empty: D12A fd cb fb 07  EASM: RLC (IY-$05)       unidasm: rlc  a=(iy-$05)
+undocumented/empty: D130 fd cb fb 08  EASM: RRC (IY-$05)       unidasm: rrc  b=(iy-$05)
+undocumented/empty: D136 fd cb fb 09  EASM: RRC (IY-$05)       unidasm: rrc  c=(iy-$05)
+undocumented/empty: D13C fd cb fb 0a  EASM: RRC (IY-$05)       unidasm: rrc  d=(iy-$05)
+undocumented/empty: D142 fd cb fb 0b  EASM: RRC (IY-$05)       unidasm: rrc  e=(iy-$05)
+undocumented/empty: D148 fd cb fb 0c  EASM: RRC (IY-$05)       unidasm: rrc  h=(iy-$05)
+undocumented/empty: D14E fd cb fb 0d  EASM: RRC (IY-$05)       unidasm: rrc  l=(iy-$05)
+undocumented/empty: D15A fd cb fb 0f  EASM: RRC (IY-$05)       unidasm: rrc  a=(iy-$05)
+undocumented/empty: D160 fd cb fb 10  EASM: RL (IY-$05)        unidasm: rl   b=(iy-$05)
+undocumented/empty: D166 fd cb fb 11  EASM: RL (IY-$05)        unidasm: rl   c=(iy-$05)
+undocumented/empty: D16C fd cb fb 12  EASM: RL (IY-$05)        unidasm: rl   d=(iy-$05)
+undocumented/empty: D172 fd cb fb 13  EASM: RL (IY-$05)        unidasm: rl   e=(iy-$05)
+undocumented/empty: D178 fd cb fb 14  EASM: RL (IY-$05)        unidasm: rl   h=(iy-$05)
+undocumented/empty: D17E fd cb fb 15  EASM: RL (IY-$05)        unidasm: rl   l=(iy-$05)
+undocumented/empty: D18A fd cb fb 17  EASM: RL (IY-$05)        unidasm: rl   a=(iy-$05)
+undocumented/empty: D190 fd cb fb 18  EASM: RR (IY-$05)        unidasm: rr   b=(iy-$05)
+undocumented/empty: D196 fd cb fb 19  EASM: RR (IY-$05)        unidasm: rr   c=(iy-$05)
+undocumented/empty: D19C fd cb fb 1a  EASM: RR (IY-$05)        unidasm: rr   d=(iy-$05)
+undocumented/empty: D1A2 fd cb fb 1b  EASM: RR (IY-$05)        unidasm: rr   e=(iy-$05)
+undocumented/empty: D1A8 fd cb fb 1c  EASM: RR (IY-$05)        unidasm: rr   h=(iy-$05)
+undocumented/empty: D1AE fd cb fb 1d  EASM: RR (IY-$05)        unidasm: rr   l=(iy-$05)
+undocumented/empty: D1BA fd cb fb 1f  EASM: RR (IY-$05)        unidasm: rr   a=(iy-$05)
+undocumented/empty: D1C0 fd cb fb 20  EASM: SLA (IY-$05)       unidasm: sla  b=(iy-$05)
+undocumented/empty: D1C6 fd cb fb 21  EASM: SLA (IY-$05)       unidasm: sla  c=(iy-$05)
+undocumented/empty: D1CC fd cb fb 22  EASM: SLA (IY-$05)       unidasm: sla  d=(iy-$05)
+undocumented/empty: D1D2 fd cb fb 23  EASM: SLA (IY-$05)       unidasm: sla  e=(iy-$05)
+undocumented/empty: D1D8 fd cb fb 24  EASM: SLA (IY-$05)       unidasm: sla  h=(iy-$05)
+undocumented/empty: D1DE fd cb fb 25  EASM: SLA (IY-$05)       unidasm: sla  l=(iy-$05)
+undocumented/empty: D1EA fd cb fb 27  EASM: SLA (IY-$05)       unidasm: sla  a=(iy-$05)
+undocumented/empty: D1F0 fd cb fb 28  EASM: SRA (IY-$05)       unidasm: sra  b=(iy-$05)
+undocumented/empty: D1F6 fd cb fb 29  EASM: SRA (IY-$05)       unidasm: sra  c=(iy-$05)
+undocumented/empty: D1FC fd cb fb 2a  EASM: SRA (IY-$05)       unidasm: sra  d=(iy-$05)
+undocumented/empty: D202 fd cb fb 2b  EASM: SRA (IY-$05)       unidasm: sra  e=(iy-$05)
+undocumented/empty: D208 fd cb fb 2c  EASM: SRA (IY-$05)       unidasm: sra  h=(iy-$05)
+undocumented/empty: D20E fd cb fb 2d  EASM: SRA (IY-$05)       unidasm: sra  l=(iy-$05)
+undocumented/empty: D21A fd cb fb 2f  EASM: SRA (IY-$05)       unidasm: sra  a=(iy-$05)
+undocumented/empty: D220 fd cb fb 30  EASM: SLL (IY-$05)       unidasm: sll  b=(iy-$05)
+undocumented/empty: D226 fd cb fb 31  EASM: SLL (IY-$05)       unidasm: sll  c=(iy-$05)
+undocumented/empty: D22C fd cb fb 32  EASM: SLL (IY-$05)       unidasm: sll  d=(iy-$05)
+undocumented/empty: D232 fd cb fb 33  EASM: SLL (IY-$05)       unidasm: sll  e=(iy-$05)
+undocumented/empty: D238 fd cb fb 34  EASM: SLL (IY-$05)       unidasm: sll  h=(iy-$05)
+undocumented/empty: D23E fd cb fb 35  EASM: SLL (IY-$05)       unidasm: sll  l=(iy-$05)
+undocumented/empty: D24A fd cb fb 37  EASM: SLL (IY-$05)       unidasm: sll  a=(iy-$05)
+undocumented/empty: D250 fd cb fb 38  EASM: SRL (IY-$05)       unidasm: srl  b=(iy-$05)
+undocumented/empty: D256 fd cb fb 39  EASM: SRL (IY-$05)       unidasm: srl  c=(iy-$05)
+undocumented/empty: D25C fd cb fb 3a  EASM: SRL (IY-$05)       unidasm: srl  d=(iy-$05)
+undocumented/empty: D262 fd cb fb 3b  EASM: SRL (IY-$05)       unidasm: srl  e=(iy-$05)
+undocumented/empty: D268 fd cb fb 3c  EASM: SRL (IY-$05)       unidasm: srl  h=(iy-$05)
+undocumented/empty: D26E fd cb fb 3d  EASM: SRL (IY-$05)       unidasm: srl  l=(iy-$05)
+undocumented/empty: D27A fd cb fb 3f  EASM: SRL (IY-$05)       unidasm: srl  a=(iy-$05)
+undocumented/empty: D280 fd cb fb 40  EASM: BIT 0,(IY-$05)     unidasm: bit  b=0,(iy-$05)
+undocumented/empty: D286 fd cb fb 41  EASM: BIT 0,(IY-$05)     unidasm: bit  c=0,(iy-$05)
+undocumented/empty: D28C fd cb fb 42  EASM: BIT 0,(IY-$05)     unidasm: bit  d=0,(iy-$05)
+undocumented/empty: D292 fd cb fb 43  EASM: BIT 0,(IY-$05)     unidasm: bit  e=0,(iy-$05)
+undocumented/empty: D298 fd cb fb 44  EASM: BIT 0,(IY-$05)     unidasm: bit  h=0,(iy-$05)
+undocumented/empty: D29E fd cb fb 45  EASM: BIT 0,(IY-$05)     unidasm: bit  l=0,(iy-$05)
+undocumented/empty: D2AA fd cb fb 47  EASM: BIT 0,(IY-$05)     unidasm: bit  a=0,(iy-$05)
+undocumented/empty: D2B0 fd cb fb 48  EASM: BIT 1,(IY-$05)     unidasm: bit  b=1,(iy-$05)
+undocumented/empty: D2B6 fd cb fb 49  EASM: BIT 1,(IY-$05)     unidasm: bit  c=1,(iy-$05)
+undocumented/empty: D2BC fd cb fb 4a  EASM: BIT 1,(IY-$05)     unidasm: bit  d=1,(iy-$05)
+undocumented/empty: D2C2 fd cb fb 4b  EASM: BIT 1,(IY-$05)     unidasm: bit  e=1,(iy-$05)
+undocumented/empty: D2C8 fd cb fb 4c  EASM: BIT 1,(IY-$05)     unidasm: bit  h=1,(iy-$05)
+undocumented/empty: D2CE fd cb fb 4d  EASM: BIT 1,(IY-$05)     unidasm: bit  l=1,(iy-$05)
+undocumented/empty: D2DA fd cb fb 4f  EASM: BIT 1,(IY-$05)     unidasm: bit  a=1,(iy-$05)
+undocumented/empty: D2E0 fd cb fb 50  EASM: BIT 2,(IY-$05)     unidasm: bit  b=2,(iy-$05)
+undocumented/empty: D2E6 fd cb fb 51  EASM: BIT 2,(IY-$05)     unidasm: bit  c=2,(iy-$05)
+undocumented/empty: D2EC fd cb fb 52  EASM: BIT 2,(IY-$05)     unidasm: bit  d=2,(iy-$05)
+undocumented/empty: D2F2 fd cb fb 53  EASM: BIT 2,(IY-$05)     unidasm: bit  e=2,(iy-$05)
+undocumented/empty: D2F8 fd cb fb 54  EASM: BIT 2,(IY-$05)     unidasm: bit  h=2,(iy-$05)
+undocumented/empty: D2FE fd cb fb 55  EASM: BIT 2,(IY-$05)     unidasm: bit  l=2,(iy-$05)
+undocumented/empty: D30A fd cb fb 57  EASM: BIT 2,(IY-$05)     unidasm: bit  a=2,(iy-$05)
+undocumented/empty: D310 fd cb fb 58  EASM: BIT 3,(IY-$05)     unidasm: bit  b=3,(iy-$05)
+undocumented/empty: D316 fd cb fb 59  EASM: BIT 3,(IY-$05)     unidasm: bit  c=3,(iy-$05)
+undocumented/empty: D31C fd cb fb 5a  EASM: BIT 3,(IY-$05)     unidasm: bit  d=3,(iy-$05)
+undocumented/empty: D322 fd cb fb 5b  EASM: BIT 3,(IY-$05)     unidasm: bit  e=3,(iy-$05)
+undocumented/empty: D328 fd cb fb 5c  EASM: BIT 3,(IY-$05)     unidasm: bit  h=3,(iy-$05)
+undocumented/empty: D32E fd cb fb 5d  EASM: BIT 3,(IY-$05)     unidasm: bit  l=3,(iy-$05)
+undocumented/empty: D33A fd cb fb 5f  EASM: BIT 3,(IY-$05)     unidasm: bit  a=3,(iy-$05)
+undocumented/empty: D340 fd cb fb 60  EASM: BIT 4,(IY-$05)     unidasm: bit  b=4,(iy-$05)
+undocumented/empty: D346 fd cb fb 61  EASM: BIT 4,(IY-$05)     unidasm: bit  c=4,(iy-$05)
+undocumented/empty: D34C fd cb fb 62  EASM: BIT 4,(IY-$05)     unidasm: bit  d=4,(iy-$05)
+undocumented/empty: D352 fd cb fb 63  EASM: BIT 4,(IY-$05)     unidasm: bit  e=4,(iy-$05)
+undocumented/empty: D358 fd cb fb 64  EASM: BIT 4,(IY-$05)     unidasm: bit  h=4,(iy-$05)
+undocumented/empty: D35E fd cb fb 65  EASM: BIT 4,(IY-$05)     unidasm: bit  l=4,(iy-$05)
+undocumented/empty: D36A fd cb fb 67  EASM: BIT 4,(IY-$05)     unidasm: bit  a=4,(iy-$05)
+undocumented/empty: D370 fd cb fb 68  EASM: BIT 5,(IY-$05)     unidasm: bit  b=5,(iy-$05)
+undocumented/empty: D376 fd cb fb 69  EASM: BIT 5,(IY-$05)     unidasm: bit  c=5,(iy-$05)
+undocumented/empty: D37C fd cb fb 6a  EASM: BIT 5,(IY-$05)     unidasm: bit  d=5,(iy-$05)
+undocumented/empty: D382 fd cb fb 6b  EASM: BIT 5,(IY-$05)     unidasm: bit  e=5,(iy-$05)
+undocumented/empty: D388 fd cb fb 6c  EASM: BIT 5,(IY-$05)     unidasm: bit  h=5,(iy-$05)
+undocumented/empty: D38E fd cb fb 6d  EASM: BIT 5,(IY-$05)     unidasm: bit  l=5,(iy-$05)
+undocumented/empty: D39A fd cb fb 6f  EASM: BIT 5,(IY-$05)     unidasm: bit  a=5,(iy-$05)
+undocumented/empty: D3A0 fd cb fb 70  EASM: BIT 6,(IY-$05)     unidasm: bit  b=6,(iy-$05)
+undocumented/empty: D3A6 fd cb fb 71  EASM: BIT 6,(IY-$05)     unidasm: bit  c=6,(iy-$05)
+undocumented/empty: D3AC fd cb fb 72  EASM: BIT 6,(IY-$05)     unidasm: bit  d=6,(iy-$05)
+undocumented/empty: D3B2 fd cb fb 73  EASM: BIT 6,(IY-$05)     unidasm: bit  e=6,(iy-$05)
+undocumented/empty: D3B8 fd cb fb 74  EASM: BIT 6,(IY-$05)     unidasm: bit  h=6,(iy-$05)
+undocumented/empty: D3BE fd cb fb 75  EASM: BIT 6,(IY-$05)     unidasm: bit  l=6,(iy-$05)
+undocumented/empty: D3CA fd cb fb 77  EASM: BIT 6,(IY-$05)     unidasm: bit  a=6,(iy-$05)
+undocumented/empty: D3D0 fd cb fb 78  EASM: BIT 7,(IY-$05)     unidasm: bit  b=7,(iy-$05)
+undocumented/empty: D3D6 fd cb fb 79  EASM: BIT 7,(IY-$05)     unidasm: bit  c=7,(iy-$05)
+undocumented/empty: D3DC fd cb fb 7a  EASM: BIT 7,(IY-$05)     unidasm: bit  d=7,(iy-$05)
+undocumented/empty: D3E2 fd cb fb 7b  EASM: BIT 7,(IY-$05)     unidasm: bit  e=7,(iy-$05)
+undocumented/empty: D3E8 fd cb fb 7c  EASM: BIT 7,(IY-$05)     unidasm: bit  h=7,(iy-$05)
+undocumented/empty: D3EE fd cb fb 7d  EASM: BIT 7,(IY-$05)     unidasm: bit  l=7,(iy-$05)
+undocumented/empty: D3FA fd cb fb 7f  EASM: BIT 7,(IY-$05)     unidasm: bit  a=7,(iy-$05)
+undocumented/empty: D400 fd cb fb 80  EASM: RES 0,(IY-$05)     unidasm: res  b=0,(iy-$05)
+undocumented/empty: D406 fd cb fb 81  EASM: RES 0,(IY-$05)     unidasm: res  c=0,(iy-$05)
+undocumented/empty: D40C fd cb fb 82  EASM: RES 0,(IY-$05)     unidasm: res  d=0,(iy-$05)
+undocumented/empty: D412 fd cb fb 83  EASM: RES 0,(IY-$05)     unidasm: res  e=0,(iy-$05)
+undocumented/empty: D418 fd cb fb 84  EASM: RES 0,(IY-$05)     unidasm: res  h=0,(iy-$05)
+undocumented/empty: D41E fd cb fb 85  EASM: RES 0,(IY-$05)     unidasm: res  l=0,(iy-$05)
+undocumented/empty: D42A fd cb fb 87  EASM: RES 0,(IY-$05)     unidasm: res  a=0,(iy-$05)
+undocumented/empty: D430 fd cb fb 88  EASM: RES 1,(IY-$05)     unidasm: res  b=1,(iy-$05)
+undocumented/empty: D436 fd cb fb 89  EASM: RES 1,(IY-$05)     unidasm: res  c=1,(iy-$05)
+undocumented/empty: D43C fd cb fb 8a  EASM: RES 1,(IY-$05)     unidasm: res  d=1,(iy-$05)
+undocumented/empty: D442 fd cb fb 8b  EASM: RES 1,(IY-$05)     unidasm: res  e=1,(iy-$05)
+undocumented/empty: D448 fd cb fb 8c  EASM: RES 1,(IY-$05)     unidasm: res  h=1,(iy-$05)
+undocumented/empty: D44E fd cb fb 8d  EASM: RES 1,(IY-$05)     unidasm: res  l=1,(iy-$05)
+undocumented/empty: D45A fd cb fb 8f  EASM: RES 1,(IY-$05)     unidasm: res  a=1,(iy-$05)
+undocumented/empty: D460 fd cb fb 90  EASM: RES 2,(IY-$05)     unidasm: res  b=2,(iy-$05)
+undocumented/empty: D466 fd cb fb 91  EASM: RES 2,(IY-$05)     unidasm: res  c=2,(iy-$05)
+undocumented/empty: D46C fd cb fb 92  EASM: RES 2,(IY-$05)     unidasm: res  d=2,(iy-$05)
+undocumented/empty: D472 fd cb fb 93  EASM: RES 2,(IY-$05)     unidasm: res  e=2,(iy-$05)
+undocumented/empty: D478 fd cb fb 94  EASM: RES 2,(IY-$05)     unidasm: res  h=2,(iy-$05)
+undocumented/empty: D47E fd cb fb 95  EASM: RES 2,(IY-$05)     unidasm: res  l=2,(iy-$05)
+undocumented/empty: D48A fd cb fb 97  EASM: RES 2,(IY-$05)     unidasm: res  a=2,(iy-$05)
+undocumented/empty: D490 fd cb fb 98  EASM: RES 3,(IY-$05)     unidasm: res  b=3,(iy-$05)
+undocumented/empty: D496 fd cb fb 99  EASM: RES 3,(IY-$05)     unidasm: res  c=3,(iy-$05)
+undocumented/empty: D49C fd cb fb 9a  EASM: RES 3,(IY-$05)     unidasm: res  d=3,(iy-$05)
+undocumented/empty: D4A2 fd cb fb 9b  EASM: RES 3,(IY-$05)     unidasm: res  e=3,(iy-$05)
+undocumented/empty: D4A8 fd cb fb 9c  EASM: RES 3,(IY-$05)     unidasm: res  h=3,(iy-$05)
+undocumented/empty: D4AE fd cb fb 9d  EASM: RES 3,(IY-$05)     unidasm: res  l=3,(iy-$05)
+undocumented/empty: D4BA fd cb fb 9f  EASM: RES 3,(IY-$05)     unidasm: res  a=3,(iy-$05)
+undocumented/empty: D4C0 fd cb fb a0  EASM: RES 4,(IY-$05)     unidasm: res  b=4,(iy-$05)
+undocumented/empty: D4C6 fd cb fb a1  EASM: RES 4,(IY-$05)     unidasm: res  c=4,(iy-$05)
+undocumented/empty: D4CC fd cb fb a2  EASM: RES 4,(IY-$05)     unidasm: res  d=4,(iy-$05)
+undocumented/empty: D4D2 fd cb fb a3  EASM: RES 4,(IY-$05)     unidasm: res  e=4,(iy-$05)
+undocumented/empty: D4D8 fd cb fb a4  EASM: RES 4,(IY-$05)     unidasm: res  h=4,(iy-$05)
+undocumented/empty: D4DE fd cb fb a5  EASM: RES 4,(IY-$05)     unidasm: res  l=4,(iy-$05)
+undocumented/empty: D4EA fd cb fb a7  EASM: RES 4,(IY-$05)     unidasm: res  a=4,(iy-$05)
+undocumented/empty: D4F0 fd cb fb a8  EASM: RES 5,(IY-$05)     unidasm: res  b=5,(iy-$05)
+undocumented/empty: D4F6 fd cb fb a9  EASM: RES 5,(IY-$05)     unidasm: res  c=5,(iy-$05)
+undocumented/empty: D4FC fd cb fb aa  EASM: RES 5,(IY-$05)     unidasm: res  d=5,(iy-$05)
+undocumented/empty: D502 fd cb fb ab  EASM: RES 5,(IY-$05)     unidasm: res  e=5,(iy-$05)
+undocumented/empty: D508 fd cb fb ac  EASM: RES 5,(IY-$05)     unidasm: res  h=5,(iy-$05)
+undocumented/empty: D50E fd cb fb ad  EASM: RES 5,(IY-$05)     unidasm: res  l=5,(iy-$05)
+undocumented/empty: D51A fd cb fb af  EASM: RES 5,(IY-$05)     unidasm: res  a=5,(iy-$05)
+undocumented/empty: D520 fd cb fb b0  EASM: RES 6,(IY-$05)     unidasm: res  b=6,(iy-$05)
+undocumented/empty: D526 fd cb fb b1  EASM: RES 6,(IY-$05)     unidasm: res  c=6,(iy-$05)
+undocumented/empty: D52C fd cb fb b2  EASM: RES 6,(IY-$05)     unidasm: res  d=6,(iy-$05)
+undocumented/empty: D532 fd cb fb b3  EASM: RES 6,(IY-$05)     unidasm: res  e=6,(iy-$05)
+undocumented/empty: D538 fd cb fb b4  EASM: RES 6,(IY-$05)     unidasm: res  h=6,(iy-$05)
+undocumented/empty: D53E fd cb fb b5  EASM: RES 6,(IY-$05)     unidasm: res  l=6,(iy-$05)
+undocumented/empty: D54A fd cb fb b7  EASM: RES 6,(IY-$05)     unidasm: res  a=6,(iy-$05)
+undocumented/empty: D550 fd cb fb b8  EASM: RES 7,(IY-$05)     unidasm: res  b=7,(iy-$05)
+undocumented/empty: D556 fd cb fb b9  EASM: RES 7,(IY-$05)     unidasm: res  c=7,(iy-$05)
+undocumented/empty: D55C fd cb fb ba  EASM: RES 7,(IY-$05)     unidasm: res  d=7,(iy-$05)
+undocumented/empty: D562 fd cb fb bb  EASM: RES 7,(IY-$05)     unidasm: res  e=7,(iy-$05)
+undocumented/empty: D568 fd cb fb bc  EASM: RES 7,(IY-$05)     unidasm: res  h=7,(iy-$05)
+undocumented/empty: D56E fd cb fb bd  EASM: RES 7,(IY-$05)     unidasm: res  l=7,(iy-$05)
+undocumented/empty: D57A fd cb fb bf  EASM: RES 7,(IY-$05)     unidasm: res  a=7,(iy-$05)
+undocumented/empty: D580 fd cb fb c0  EASM: SET 0,(IY-$05)     unidasm: set  b=0,(iy-$05)
+undocumented/empty: D586 fd cb fb c1  EASM: SET 0,(IY-$05)     unidasm: set  c=0,(iy-$05)
+undocumented/empty: D58C fd cb fb c2  EASM: SET 0,(IY-$05)     unidasm: set  d=0,(iy-$05)
+undocumented/empty: D592 fd cb fb c3  EASM: SET 0,(IY-$05)     unidasm: set  e=0,(iy-$05)
+undocumented/empty: D598 fd cb fb c4  EASM: SET 0,(IY-$05)     unidasm: set  h=0,(iy-$05)
+undocumented/empty: D59E fd cb fb c5  EASM: SET 0,(IY-$05)     unidasm: set  l=0,(iy-$05)
+undocumented/empty: D5AA fd cb fb c7  EASM: SET 0,(IY-$05)     unidasm: set  a=0,(iy-$05)
+undocumented/empty: D5B0 fd cb fb c8  EASM: SET 1,(IY-$05)     unidasm: set  b=1,(iy-$05)
+undocumented/empty: D5B6 fd cb fb c9  EASM: SET 1,(IY-$05)     unidasm: set  c=1,(iy-$05)
+undocumented/empty: D5BC fd cb fb ca  EASM: SET 1,(IY-$05)     unidasm: set  d=1,(iy-$05)
+undocumented/empty: D5C2 fd cb fb cb  EASM: SET 1,(IY-$05)     unidasm: set  e=1,(iy-$05)
+undocumented/empty: D5C8 fd cb fb cc  EASM: SET 1,(IY-$05)     unidasm: set  h=1,(iy-$05)
+undocumented/empty: D5CE fd cb fb cd  EASM: SET 1,(IY-$05)     unidasm: set  l=1,(iy-$05)
+undocumented/empty: D5DA fd cb fb cf  EASM: SET 1,(IY-$05)     unidasm: set  a=1,(iy-$05)
+undocumented/empty: D5E0 fd cb fb d0  EASM: SET 2,(IY-$05)     unidasm: set  b=2,(iy-$05)
+undocumented/empty: D5E6 fd cb fb d1  EASM: SET 2,(IY-$05)     unidasm: set  c=2,(iy-$05)
+undocumented/empty: D5EC fd cb fb d2  EASM: SET 2,(IY-$05)     unidasm: set  d=2,(iy-$05)
+undocumented/empty: D5F2 fd cb fb d3  EASM: SET 2,(IY-$05)     unidasm: set  e=2,(iy-$05)
+undocumented/empty: D5F8 fd cb fb d4  EASM: SET 2,(IY-$05)     unidasm: set  h=2,(iy-$05)
+undocumented/empty: D5FE fd cb fb d5  EASM: SET 2,(IY-$05)     unidasm: set  l=2,(iy-$05)
+undocumented/empty: D60A fd cb fb d7  EASM: SET 2,(IY-$05)     unidasm: set  a=2,(iy-$05)
+undocumented/empty: D610 fd cb fb d8  EASM: SET 3,(IY-$05)     unidasm: set  b=3,(iy-$05)
+undocumented/empty: D616 fd cb fb d9  EASM: SET 3,(IY-$05)     unidasm: set  c=3,(iy-$05)
+undocumented/empty: D61C fd cb fb da  EASM: SET 3,(IY-$05)     unidasm: set  d=3,(iy-$05)
+undocumented/empty: D622 fd cb fb db  EASM: SET 3,(IY-$05)     unidasm: set  e=3,(iy-$05)
+undocumented/empty: D628 fd cb fb dc  EASM: SET 3,(IY-$05)     unidasm: set  h=3,(iy-$05)
+undocumented/empty: D62E fd cb fb dd  EASM: SET 3,(IY-$05)     unidasm: set  l=3,(iy-$05)
+undocumented/empty: D63A fd cb fb df  EASM: SET 3,(IY-$05)     unidasm: set  a=3,(iy-$05)
+undocumented/empty: D640 fd cb fb e0  EASM: SET 4,(IY-$05)     unidasm: set  b=4,(iy-$05)
+undocumented/empty: D646 fd cb fb e1  EASM: SET 4,(IY-$05)     unidasm: set  c=4,(iy-$05)
+undocumented/empty: D64C fd cb fb e2  EASM: SET 4,(IY-$05)     unidasm: set  d=4,(iy-$05)
+undocumented/empty: D652 fd cb fb e3  EASM: SET 4,(IY-$05)     unidasm: set  e=4,(iy-$05)
+undocumented/empty: D658 fd cb fb e4  EASM: SET 4,(IY-$05)     unidasm: set  h=4,(iy-$05)
+undocumented/empty: D65E fd cb fb e5  EASM: SET 4,(IY-$05)     unidasm: set  l=4,(iy-$05)
+undocumented/empty: D66A fd cb fb e7  EASM: SET 4,(IY-$05)     unidasm: set  a=4,(iy-$05)
+undocumented/empty: D670 fd cb fb e8  EASM: SET 5,(IY-$05)     unidasm: set  b=5,(iy-$05)
+undocumented/empty: D676 fd cb fb e9  EASM: SET 5,(IY-$05)     unidasm: set  c=5,(iy-$05)
+undocumented/empty: D67C fd cb fb ea  EASM: SET 5,(IY-$05)     unidasm: set  d=5,(iy-$05)
+undocumented/empty: D682 fd cb fb eb  EASM: SET 5,(IY-$05)     unidasm: set  e=5,(iy-$05)
+undocumented/empty: D688 fd cb fb ec  EASM: SET 5,(IY-$05)     unidasm: set  h=5,(iy-$05)
+undocumented/empty: D68E fd cb fb ed  EASM: SET 5,(IY-$05)     unidasm: set  l=5,(iy-$05)
+undocumented/empty: D69A fd cb fb ef  EASM: SET 5,(IY-$05)     unidasm: set  a=5,(iy-$05)
+undocumented/empty: D6A0 fd cb fb f0  EASM: SET 6,(IY-$05)     unidasm: set  b=6,(iy-$05)
+undocumented/empty: D6A6 fd cb fb f1  EASM: SET 6,(IY-$05)     unidasm: set  c=6,(iy-$05)
+undocumented/empty: D6AC fd cb fb f2  EASM: SET 6,(IY-$05)     unidasm: set  d=6,(iy-$05)
+undocumented/empty: D6B2 fd cb fb f3  EASM: SET 6,(IY-$05)     unidasm: set  e=6,(iy-$05)
+undocumented/empty: D6B8 fd cb fb f4  EASM: SET 6,(IY-$05)     unidasm: set  h=6,(iy-$05)
+undocumented/empty: D6BE fd cb fb f5  EASM: SET 6,(IY-$05)     unidasm: set  l=6,(iy-$05)
+undocumented/empty: D6CA fd cb fb f7  EASM: SET 6,(IY-$05)     unidasm: set  a=6,(iy-$05)
+undocumented/empty: D6D0 fd cb fb f8  EASM: SET 7,(IY-$05)     unidasm: set  b=7,(iy-$05)
+undocumented/empty: D6D6 fd cb fb f9  EASM: SET 7,(IY-$05)     unidasm: set  c=7,(iy-$05)
+undocumented/empty: D6DC fd cb fb fa  EASM: SET 7,(IY-$05)     unidasm: set  d=7,(iy-$05)
+undocumented/empty: D6E2 fd cb fb fb  EASM: SET 7,(IY-$05)     unidasm: set  e=7,(iy-$05)
+undocumented/empty: D6E8 fd cb fb fc  EASM: SET 7,(IY-$05)     unidasm: set  h=7,(iy-$05)
+undocumented/empty: D6EE fd cb fb fd  EASM: SET 7,(IY-$05)     unidasm: set  l=7,(iy-$05)
+5326 instructions compared, 0 mismatches, 639 differences in undocumented or empty opcodes

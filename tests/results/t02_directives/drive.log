@@ -1,0 +1,26 @@
+loaded src_directives.asm: 23 lines, 406 bytes
+--- asm t=4.08
+|>ASM                |
+|D000-D02C 45 bytes  |
+|Entry D000          |
+|>                   |
+PASS row 1 = [D000-D02C 45 bytes] (got [D000-D02C 45 bytes])
+PASS row 2 = [Entry D000] (got [Entry D000])
+PASS mem D000 = 06 03 10 FE 18 19 21 11 D0 DD 7E 04 C3 21 D0 (got 06 03 10 FE 18 19 21 11 D0 DD 7E 04 C3 21 D0 )
+PASS mem D00F = 01 02 41 48 69 FF FF 00 D0 34 12 16 D0 AA AA AA (got 01 02 41 48 69 FF FF 00 D0 34 12 16 D0 AA AA AA )
+PASS mem D01F = 3E 82 C9 01 10 0D 11 FF FF 3E 19 3E 00 C9 (got 3E 82 C9 01 10 0D 11 FF FF 3E 19 3E 00 C9 )
+--- sym t=5.28
+|COUNT           0003|
+|BASE            D100|
+|START           D000|
+|LOOP            D002|
+PASS row 0 = [COUNT           0003] (got [COUNT           0003])
+PASS row 1 = [BASE            D100] (got [BASE            D100])
+--- sym2 t=6.44
+|TABLE           D00F|
+|FWD             D01F|
+|FWD2            D021|
+|OFS             0004|
+PASS row 3 = [>] (got [>])
+PASS row 2 = [=0C3AH 3130] (got [=0C3AH 3130])
+RESULT pass=9 fail=0

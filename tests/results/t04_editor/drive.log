@@ -1,0 +1,89 @@
+PASS row 0 = [  LD A,1] (got [  LD A,1])
+PASS row 1 = [  RET] (got [  RET])
+--- split t=4.04
+|  LD A,             |
+|  1                 |
+|  RET               |
+|                    |
+PASS row 0 = [  LD A,] (got [  LD A,])
+PASS row 1 = [  1] (got [  1])
+PASS row 2 = [  RET] (got [  RET])
+--- join t=4.72
+|  LD A,  1          |
+|  RET               |
+|                    |
+|                    |
+PASS row 0 = [  LD A,  1] (got [  LD A,  1])
+PASS row 1 = [  RET] (got [  RET])
+PASS row 0 = [  LD A,1] (got [  LD A,1])
+--- joinb t=5.96
+|  LD A,1  RET       |
+|                    |
+|                    |
+|                    |
+PASS row 0 = [  LD A,1  RET] (got [  LD A,1  RET])
+--- restored t=7.32
+|  LD A,1            |
+|  RET               |
+|                    |
+|                    |
+PASS row 0 = [  LD A,1] (got [  LD A,1])
+PASS row 1 = [  RET] (got [  RET])
+--- long t=11.22
+|  LD A,1            |
+|  RET               |
+|NGNAME_OF_A_ROUTINE |
+|                    |
+PASS row 2 = [NGNAME_OF_A_ROUTINE] (got [NGNAME_OF_A_ROUTINE])
+--- long_up t=11.72
+|  LD A,1            |
+|  RET               |
+|  CALL VERYLONGNAME_|
+|                    |
+PASS row 2 = [  CALL VERYLONGNAME_] (got [  CALL VERYLONGNAME_])
+PASS row 1 = [  RET] (got [  RET])
+--- numbers t=12.24
+|001   LD A,1        |
+|002   RET           |
+|003   CALL VERYLONGN|
+|                    |
+PASS row 0 = [001   LD A,1] (got [001   LD A,1])
+PASS row 1 = [002   RET] (got [002   RET])
+PASS row 2 = [003   CALL VERYLONGN] (got [003   CALL VERYLONGN])
+--- inserted t=14.30
+|  LD A,1            |
+|; inserted          |
+|  RET               |
+|  CALL VERYLONGNAME_|
+PASS row 1 = [; inserted] (got [; inserted])
+PASS row 2 = [  RET] (got [  RET])
+PASS row 1 = [  RET] (got [  RET])
+--- help_ld t=16.14
+|LD                  |
+|LD to,from: copy. 8 |
+|bits: r,r r,n r,(HL)|
+|(HL),r (HL),n A,(BC)|
+PASS row 0 = [LD] (got [LD])
+PASS row 1 = [LD to,from: copy. 8] (got [LD to,from: copy. 8])
+--- help_example t=16.84
+|  LD A,1            |
+|  LD HL,MSG         |
+|  RET               |
+|  CALL VERYLONGNAME_|
+PASS row 0 = [  LD A,1] (got [  LD A,1])
+PASS row 1 = [  LD HL,MSG] (got [  LD HL,MSG])
+PASS row 2 = [  RET] (got [  RET])
+--- find t=18.20
+|  LD A,1            |
+|  LD HL,MSG         |
+|  RET               |
+|  CALL VERYLONGNAME_|
+PASS row 3 = [  CALL VERYLONGNAME_] (got [  CALL VERYLONGNAME_])
+--- line1 t=19.74
+|  LD A,1            |
+|  LD HL,MSG         |
+|  RET               |
+|  CALL VERYLONGNAME_|
+PASS row 0 = [  LD A,1] (got [  LD A,1])
+PASS row 1 = [  LD HL,MSG] (got [  LD HL,MSG])
+RESULT pass=28 fail=0

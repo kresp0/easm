@@ -1,0 +1,401 @@
+# Guide shown by the HELP key. "@TITLE" starts an entry, the following lines are its text
+# (joined with spaces; an empty line starts a new line on the screen), "=..." is the example
+# that ENTER takes (the editor inserts it as a line, the command line types it).
+# Lines starting with "#" are comments. Entries whose title is all capitals are mnemonics and
+# directives: gen_help.py checks that every one of ASMB.Z80's mnemonics has one.
+# Copyright (C) 2026 Santiago Crespo
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+@Start here
+EASM: write Z80 code, assemble it, run it.
+ANSWER switches between the editor and the command line. There, ASM assembles and RUN runs. HELP on a word opens its page.
+
+@Using the guide
+Ü or ; (or LEFT, RIGHT) move. A letter jumps to it. ENTER opens a page; there it takes the example. ANSWER goes back.
+
+@Editor keys
+ALT+Ü, ALT+;: line up, down. LEFT, RIGHT; with ALT: start, end. DELETE, DEL (at the ends they join lines). ENTER splits the line and keeps the indent. SHIFT+HELP: TAB.
+
+@Activity keys
+Down each column: LD CALL JP JR RET / PUSH POP INC DEC DJNZ / ADD SUB AND OR XOR / CP EX OUT IN (HL) / ORG EQU DB DW DS / END, page up, page down, LINE, last error.
+
+@Panel commands
+Column 7: ASM, RUN, command line, ? (calculator), FIND.
+Column 8: NIVEL line numbers on/off, 1 PLAYER inserts a line, 2 PLAYERS deletes it.
+
+@Commands
+ASM assembles. RUN assembles and runs. EDIT [n], LINE n: the editor. FIND text. SYM: symbols. ? expr: a value. NEW erases. BYE: Genio menu.
+=FIND START
+
+@Monitor
+Numbers are hex. A addr: assemble lines. D [addr]: disassemble. M [addr]: memory. E addr [bytes]: edit. R: registers. G [addr]: run. F from,to,byte. C from,to,with.
+=D 8010
+
+@Viewers
+D, M, SYM: Ü and ; one step, LEFT and RIGHT four. ENTER or ANSWER leaves. D goes back through its last 16 steps.
+Writes (ASM, A, E, F) go only to D000-DAFF.
+
+@Syntax
+[label[:]] [instruction] [;comment]
+A label ends in : or starts in column 0. name EQU value. Separate instructions with :. Any case.
+=LOOP: DJNZ LOOP
+
+@Numbers
+Decimal 255. Hex 0FFH, $FF, 0xFF, &FF. Binary %1010, 1010B. Character 'A' or "A". $ alone: the address of the line.
+In the monitor numbers are plain hex: C000.
+
+@Expressions
++ - * / % (rest) << >> & (and) | (or) ^ (xor); unary - + ~ (not); ( ).
+First unary, then * / % << >>, + -, &, | ^. 16 bits, wrapping round.
+=LD HL,MSG+2*(3-1)
+
+@Directives
+ORG addr. name EQU value. DB bytes or "text". DW words. DS count[,fill]. END [entry]. DEFB, DEFM, DEFW, DEFS are the same.
+
+@Registers
+8-bit: A F B C D E H L, I R. 16-bit: BC DE HL AF SP, IX IY (index), PC. Second set: AF' BC' DE' HL' (EX AF,AF', EXX).
+
+@Flags
+In F: S sign, Z zero, H half carry, P/V parity or overflow, N subtract, C carry. R shows them as SZHPNC.
+
+@Conditions
+NZ, Z: zero flag. NC, C: carry. PO, PE: parity odd, even. P, M: plus, minus (sign). JR has only NZ Z NC C.
+=JP NZ,LOOP
+
+@Addressing
+n, nn: a value. (nn): memory. (HL) (BC) (DE): at a pair. (IX+d) (IY+d): d from -128 to 127. JR, DJNZ: -126 to +129 from the instruction.
+=LD A,(IX+5)
+
+@Calls (API)
+Built-in names: PRINTSTR (HL: text,0), PUTCHAR (A), GETKEY (gives A), KEYPOLL (A or 0), CLS, SETCUR (D row, E col), PRHEX8 (A), PRHEX16 (HL), PRDEC (HL), NEWLINE, BEEP, DELAY (HL ms), EXIT.
+=CALL PRINTSTR
+
+@API addresses
+PRINTSTR 8010, PUTCHAR 8013, GETKEY 8016, KEYPOLL 8019, CLS 801C, SETCUR 801F, PRHEX8 8022, PRHEX16 8025, PRDEC 8028, BEEP 802B, DELAY 802E, EXIT 8031, NEWLINE 8034. USERRAM D000.
+
+@Running code
+RUN and G call the code: its last RET comes back. EXIT comes back from anywhere (R shows where). ANSWER stops a program while interrupts are on. Stack: C400-C4FF.
+
+@Memory map
+0000-7FFF Genio ROM. 8000-BFFF cartridge (EASM). C000-C4FF EASM. C500-CFFF text, symbols. D000-DAFF user RAM. DB00-DFFF firmware.
+
+@Errors
+After ASM: "Line n:", the line and the message. The QUE SOY? key goes to it.
+Phase error: a label moved between the passes (a forward EQU or DS). Outside user RAM: code not in D000-DAFF.
+
+@Example
+Type it in the editor, then RUN:
+ORG USERRAM
+START: LD HL,MSG
+CALL PRINTSTR
+RET
+MSG: DB "HOLA",0
+=MSG: DB "HOLA",0
+
+@ADC
+ADC A,s: A = A + s + carry. s: r, n, (HL), (IX+d). ADC HL,rp: HL = HL + rp + carry. All flags.
+=ADC A,B
+
+@ADD
+ADD A,s: A = A + s. ADD HL,rp, ADD IX,rp, ADD IY,rp: 16 bits, only H N C change. 8 bits: all flags.
+=ADD HL,DE
+
+@AND
+AND s: A = A and s, bit by bit. s: r, n, (HL), (IX+d). Flags S Z P; H 1, N C 0.
+=AND 0FH
+
+@BIT
+BIT b,r: Z = 1 if bit b (0-7) is 0. Also (HL), (IX+d). H 1, N 0, C kept.
+=BIT 7,A
+
+@CALL
+CALL nn, CALL cc,nn: push the return address and jump to nn (if cc holds). RET comes back.
+=CALL PRINTSTR
+
+@CCF
+CCF: complement the carry. H gets the old C, N 0.
+=CCF
+
+@CP
+CP s: compare A with s (A - s; A is kept). Z: equal. C: A below s (unsigned).
+=CP 'A'
+
+@CPD
+CPD: compare A with (HL); HL - 1, BC - 1. Z if equal; P/V 0 when BC reaches 0.
+=CPD
+
+@CPDR
+CPDR: CPD again until A = (HL) or BC = 0. Searches downwards.
+=CPDR
+
+@CPI
+CPI: compare A with (HL); HL + 1, BC - 1. Z if equal; P/V 0 when BC reaches 0.
+=CPI
+
+@CPIR
+CPIR: CPI again until A = (HL) or BC = 0. Searches for a byte.
+=CPIR
+
+@CPL
+CPL: A = not A (every bit). H 1, N 1.
+=CPL
+
+@DAA
+DAA: adjust A to decimal (BCD) after ADD, ADC, SUB or SBC of BCD numbers.
+=DAA
+
+@DEC
+DEC r, (HL), (IX+d): - 1; flags S Z H P/V, N 1, C kept. DEC rp, IX, IY: - 1, no flags.
+=DEC B
+
+@DI
+DI: interrupts off. EASM's cursor and the ANSWER break need them on.
+=DI
+
+@DJNZ
+DJNZ e: B = B - 1, and jump (relative) unless B is 0. No flags. Loops 1-256 times.
+=DJNZ LOOP
+
+@EI
+EI: interrupts on (after the next instruction).
+=EI
+
+@EX
+EX DE,HL. EX AF,AF'. EX (SP),HL, EX (SP),IX, EX (SP),IY: swap with the top of the stack.
+=EX DE,HL
+
+@EXX
+EXX: swap BC DE HL with BC' DE' HL'.
+=EXX
+
+@HALT
+HALT: wait for an interrupt. With interrupts off it never ends.
+=HALT
+
+@IM
+IM 0, IM 1, IM 2: interrupt mode. The Genio works in IM 1.
+=IM 1
+
+@IN
+IN A,(n): A = port n. IN r,(C): r = port C (B on the high address lines); flags S Z P.
+=IN A,(10H)
+
+@INC
+INC r, (HL), (IX+d): + 1; flags S Z H P/V, N 0, C kept. INC rp, IX, IY: + 1, no flags.
+=INC HL
+
+@IND
+IND: (HL) = port (C); HL - 1, B - 1. Z when B is 0.
+=IND
+
+@INDR
+INDR: IND again until B = 0.
+=INDR
+
+@INI
+INI: (HL) = port (C); HL + 1, B - 1. Z when B is 0.
+=INI
+
+@INIR
+INIR: INI again until B = 0.
+=INIR
+
+@JP
+JP nn, JP cc,nn: jump. JP (HL), JP (IX), JP (IY): jump to the address in the register.
+=JP START
+
+@JR
+JR e, JR NZ,e (also Z NC C): relative jump, -126 to +129 bytes from the JR. 2 bytes.
+=JR NZ,LOOP
+
+@LD
+LD to,from: copy. 8 bits: r,r r,n r,(HL) (HL),r (HL),n A,(BC) A,(DE) A,(nn), the other way too, (IX+d). 16 bits: rp,nn rp,(nn) (nn),rp SP,HL. I,A R,A A,I A,R.
+=LD HL,MSG
+
+@LDD
+LDD: (DE) = (HL); HL - 1, DE - 1, BC - 1. P/V 0 when BC reaches 0.
+=LDD
+
+@LDDR
+LDDR: LDD until BC = 0. Copies a block from its end.
+=LDDR
+
+@LDI
+LDI: (DE) = (HL); HL + 1, DE + 1, BC - 1. P/V 0 when BC reaches 0.
+=LDI
+
+@LDIR
+LDIR: LDI until BC = 0: copies BC bytes from HL to DE.
+=LDIR
+
+@NEG
+NEG: A = 0 - A. Flags as SUB.
+=NEG
+
+@NOP
+NOP: nothing. 1 byte, 4 clock cycles.
+=NOP
+
+@OR
+OR s: A = A or s, bit by bit. Flags S Z P; H N C 0. OR A tests A.
+=OR A
+
+@OTDR
+OTDR: OUTD again until B = 0.
+=OTDR
+
+@OTIR
+OTIR: OUTI again until B = 0.
+=OTIR
+
+@OUT
+OUT (n),A: port n = A. OUT (C),r. Genio ports: 03 cartridge page, 0A 0B LCD, 10 11 keyboard, 12 speaker (bit 3), LED (bit 5); bit 0 of 12 switches off!
+=OUT (12H),A
+
+@OUTD
+OUTD: port (C) = (HL); HL - 1, B - 1 (B is decremented first).
+=OUTD
+
+@OUTI
+OUTI: port (C) = (HL); HL + 1, B - 1 (B is decremented first).
+=OUTI
+
+@POP
+POP rp: rp = the top of the stack, SP + 2. rp: BC DE HL AF IX IY.
+=POP HL
+
+@PUSH
+PUSH rp: SP - 2, rp stored there. Leave the stack as you found it before RET.
+=PUSH HL
+
+@RES
+RES b,r: bit b = 0. Also (HL), (IX+d). No flags.
+=RES 0,A
+
+@RET
+RET, RET cc: return (pop the address). The last RET of a program run by RUN or G goes back to EASM.
+=RET Z
+
+@RETI
+RETI: return from an interrupt (Z80 peripherals).
+=RETI
+
+@RETN
+RETN: return from a non-maskable interrupt.
+=RETN
+
+@RL
+RL r: rotate left through the carry: C gets bit 7, bit 0 gets C. Also (HL), (IX+d). Flags S Z P C.
+=RL C
+
+@RLA
+RLA: RL A, faster; only H N C change.
+=RLA
+
+@RLC
+RLC r: rotate left; bit 7 goes to bit 0 and to C. Also (HL), (IX+d). Flags S Z P C.
+=RLC B
+
+@RLCA
+RLCA: RLC A, faster; only H N C change.
+=RLCA
+
+@RLD
+RLD: rotate the digits left: (HL) high, (HL) low and A low, as one 12-bit number. For BCD.
+=RLD
+
+@RR
+RR r: rotate right through the carry: C gets bit 0, bit 7 gets C. Flags S Z P C.
+=RR C
+
+@RRA
+RRA: RR A, faster; only H N C change.
+=RRA
+
+@RRC
+RRC r: rotate right; bit 0 goes to bit 7 and to C. Flags S Z P C.
+=RRC B
+
+@RRCA
+RRCA: RRC A, faster; only H N C change.
+=RRCA
+
+@RRD
+RRD: rotate the digits right: A low, (HL) high, (HL) low. For BCD.
+=RRD
+
+@RST
+RST n: CALL to 00 08 10 18 20 28 30 or 38H, in the Genio's ROM. RST 38H is its interrupt routine.
+=RST 0
+
+@SBC
+SBC A,s: A = A - s - carry. SBC HL,rp: HL = HL - rp - carry. All flags.
+=SBC HL,DE
+
+@SCF
+SCF: carry = 1. H N 0.
+=SCF
+
+@SET
+SET b,r: bit b = 1. Also (HL), (IX+d). No flags.
+=SET 7,(HL)
+
+@SLA
+SLA r: shift left; bit 0 = 0, C gets bit 7. Flags S Z P C.
+=SLA A
+
+@SRA
+SRA r: shift right keeping bit 7 (the sign); C gets bit 0. Flags S Z P C.
+=SRA A
+
+@SRL
+SRL r: shift right; bit 7 = 0, C gets bit 0. Flags S Z P C.
+=SRL A
+
+@SUB
+SUB s: A = A - s (no "A," before s). All flags; C on a borrow.
+=SUB 10
+
+@XOR
+XOR s: A = A xor s, bit by bit. XOR A makes A 0. Flags S Z P; H N C 0.
+=XOR A
+
+@DB
+DB items: bytes, separated by commas: values from -256 to 255, or "text". 'A' alone is a value.
+=DB "HOLA",0
+
+@DEFB
+DEFB: the same as DB.
+=DEFB 1,2,3
+
+@DEFM
+DEFM: the same as DB, for text.
+=DEFM "TEXT"
+
+@DW
+DW items: 16-bit values, low byte first.
+=DW START,1234H
+
+@DEFW
+DEFW: the same as DW.
+=DEFW 0
+
+@DS
+DS n[,fill]: n bytes of fill (0 if none).
+=DS 10
+
+@DEFS
+DEFS: the same as DS.
+=DEFS 4,0FFH
+
+@ORG
+ORG addr: the next code goes at addr. At first D000 (USERRAM). The code must stay in D000-DAFF.
+=ORG USERRAM
+
+@EQU
+name EQU value: a constant. name = value is the same.
+=COUNT EQU 10
+
+@END
+END [entry]: the end of the program; RUN and G start at entry (else at the first byte).
+=END START

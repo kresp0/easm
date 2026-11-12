@@ -1,0 +1,70 @@
+loaded err/e1.asm: 2 lines, 12 bytes
+PASS row 0 = [Line 2:] (got [Line 2:])
+PASS row 1 = [  LD A,] (got [  LD A,])
+PASS row 2 = [Syntax error] (got [Syntax error])
+loaded err/e2.asm: 3 lines, 22 bytes
+PASS row 0 = [Line 3:] (got [Line 3:])
+PASS row 1 = [  JP NOWHERE] (got [  JP NOWHERE])
+PASS row 2 = [Unknown symbol] (got [Unknown symbol])
+loaded err/e3.asm: 2 lines, 14 bytes
+PASS row 0 = [Line 2:] (got [Line 2:])
+PASS row 1 = [X: NOP] (got [X: NOP])
+PASS row 2 = [Duplicate label] (got [Duplicate label])
+loaded err/e4.asm: 3 lines, 23 bytes
+PASS row 0 = [Line 3:] (got [Line 3:])
+PASS row 1 = [  JR LP] (got [  JR LP])
+PASS row 2 = [Out of range] (got [Out of range])
+loaded err/e5.asm: 2 lines, 17 bytes
+PASS row 0 = [Line 2:] (got [Line 2:])
+PASS row 1 = [  NOP] (got [  NOP])
+PASS row 2 = [Outside user RAM] (got [Outside user RAM])
+loaded err/e6.asm: 1 lines, 10 bytes
+PASS row 0 = [Line 1:] (got [Line 1:])
+PASS row 1 = [  LD A,12Z] (got [  LD A,12Z])
+PASS row 2 = [Bad number] (got [Bad number])
+loaded err/e7.asm: 1 lines, 11 bytes
+PASS row 0 = [Line 1:] (got [Line 1:])
+PASS row 1 = [  LD A,(1+2] (got [  LD A,(1+2])
+PASS row 2 = [Missing )] (got [Missing )])
+loaded err/e8.asm: 1 lines, 8 bytes
+PASS row 0 = [Line 1:] (got [Line 1:])
+PASS row 1 = [  DB 1/0] (got [  DB 1/0])
+PASS row 2 = [Division by zero] (got [Division by zero])
+loaded err/e9.asm: 3 lines, 21 bytes
+PASS row 0 = [Line 2:] (got [Line 2:])
+PASS row 1 = [L: NOP] (got [L: NOP])
+PASS row 2 = [Phase error] (got [Phase error])
+loaded err/e10.asm: 1 lines, 9 bytes
+PASS row 0 = [Line 1:] (got [Line 1:])
+PASS row 1 = [  DB "abc] (got [  DB "abc])
+PASS row 2 = [Bad string] (got [Bad string])
+loaded err/e11.asm: 1 lines, 8 bytes
+PASS row 0 = [Line 1:] (got [Line 1:])
+PASS row 1 = [  DB 300] (got [  DB 300])
+PASS row 2 = [Out of range] (got [Out of range])
+loaded err/e12.asm: 1 lines, 23 bytes
+PASS row 0 = [Line 1:] (got [Line 1:])
+PASS row 1 = [ABCDEFGHIJKLMNOPQ: N] (got [ABCDEFGHIJKLMNOPQ: N])
+PASS row 2 = [Name too long] (got [Name too long])
+loaded err/e13.asm: 1 lines, 10 bytes
+PASS row 0 = [Line 1:] (got [Line 1:])
+PASS row 1 = [  LD A,5 Z] (got [  LD A,5 Z])
+PASS row 2 = [Syntax error] (got [Syntax error])
+loaded err/e14.asm: 1 lines, 7 bytes
+PASS row 0 = [Line 1:] (got [Line 1:])
+PASS row 1 = [  FOO A] (got [  FOO A])
+PASS row 2 = [Syntax error] (got [Syntax error])
+loaded err/e15.asm: 1 lines, 9 bytes
+PASS row 0 = [Line 1:] (got [Line 1:])
+PASS row 1 = [  DS 3000] (got [  DS 3000])
+PASS row 2 = [Outside user RAM] (got [Outside user RAM])
+loaded err/e2.asm: 3 lines, 22 bytes
+--- at_error t=35.16
+|  NOP               |
+|  NOP               |
+|  JP NOWHERE        |
+|                    |
+PASS row 0 = [  NOP] (got [  NOP])
+PASS row 2 = [  JP NOWHERE] (got [  JP NOWHERE])
+PASS mem C150 = 0C 02 (got 0C 02 )
+RESULT pass=48 fail=0

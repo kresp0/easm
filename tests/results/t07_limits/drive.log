@@ -1,0 +1,34 @@
+loaded src_full.asm: 552 lines, 2760 bytes
+--- asm_full t=5.08
+|>ASM                |
+|D000-D227 552 bytes |
+|Entry D000          |
+|>                   |
+PASS row 1 = [D000-D227 552 bytes] (got [D000-D227 552 bytes])
+--- text_full t=15.10
+|Text full           |
+|  NOP               |
+|  NOP               |
+|  NOP               |
+PASS row 0 = [Text full] (got [Text full])
+PASS row 0 = [  NOP] (got [  NOP])
+--- cmdline t=16.18
+|>ASM                |
+|D000-D227 552 bytes |
+|Entry D000          |
+|>                   |
+loaded src_syms.asm: 250 lines, 2390 bytes
+--- symfull t=18.72
+|Line 73:            |
+|L72: NOP            |
+|Symbol table full   |
+|>                   |
+PASS row 2 = [Symbol table full] (got [Symbol table full])
+--- bye t=21.26
+|L72: NOP            |
+|Symbol table full   |
+|>BYE                |
+|                    |
+PASS PC in 0000-7FFF (got 10E8)
+PASS PC in 0000-7FFF (got 10E6)
+RESULT pass=6 fail=0

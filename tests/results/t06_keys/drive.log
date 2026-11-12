@@ -1,0 +1,56 @@
+PASS row 0 = [EASM 1.0        2815] (got [EASM 1.0        2815])
+--- asm_key t=5.68
+|>ASM                |
+|D000-D002 3 bytes   |
+|Entry D000          |
+|>                   |
+PASS row 0 = [>ASM] (got [>ASM])
+PASS row 1 = [D000-D002 3 bytes] (got [D000-D002 3 bytes])
+--- run_key t=7.02
+|D000-D002 3 bytes   |
+|Entry D000          |
+|>RUN                |
+|>                   |
+PASS row 2 = [>RUN] (got [>RUN])
+PASS row 0 = [AF=2A*] (got [AF=2A00 ------ ----])
+--- index t=8.34
+|>Start here         |
+| Using the guide    |
+| Editor keys        |
+| Activity keys      |
+PASS row 0 = [>Start here] (got [>Start here])
+PASS row 0 = [>NEG] (got [>NEG])
+PASS row 0 = [>Start here] (got [>Start here])
+--- index_down t=23.30
+| Activity keys      |
+| Panel commands     |
+| Commands           |
+|>Monitor            |
+PASS row 3 = [>Monitor] (got [>Monitor])
+--- monitor_page t=23.78
+|Monitor             |
+|Numbers are hex. A  |
+|addr: assemble      |
+|lines. D [addr]:    |
+PASS row 0 = [Monitor] (got [Monitor])
+--- example_typed t=24.36
+|Entry D000          |
+|>RUN                |
+|>R                  |
+|>D 8010             |
+PASS row 3 = [>D 8010] (got [>D 8010])
+--- api_table t=24.94
+|8010 JP $83BE       |
+|8013 JP $8328       |
+|8016 JP $866B       |
+|8019 JP $8511       |
+PASS row 0 = [8010 JP $*] (got [8010 JP $83BE])
+PASS row 1 = [8013 JP $*] (got [8013 JP $8328])
+PASS row 1 = [D000-D002 3 bytes] (got [D000-D002 3 bytes])
+--- after_new t=30.08
+|erased              |
+|>ASM                |
+|OK, no code         |
+|>                   |
+PASS row 2 = [OK, no code] (got [OK, no code])
+RESULT pass=15 fail=0

@@ -1,0 +1,96 @@
+# The editor: split and join lines, delete and insert lines, long lines, line numbers, activity keys,
+# the guide (page 2 of the cartridge) and its example, FIND and LINE
+wait 1.5
+type \e
+wait 0.3
+# activity keys type mnemonics, indented on an empty line
+press BUSCA LA LETRA
+type A,1\n
+press REVOLTIJO DE LETRAS
+wait 0.3
+expect 0   LD A,1
+expect 1   RET
+# ENTER in the middle splits the line; the new line keeps the indentation
+type \u\]\l
+type \n
+wait 0.3
+dump split
+expect 0   LD A,
+expect 1   1
+expect 2   RET
+# DELETE in column 0 joins the line to the one above
+type \[\b
+wait 0.3
+dump join
+expect 0   LD A,  1
+expect 1   RET
+# DEL deletes to the right; at the end of a line it joins the next one
+type \x\x
+wait 0.3
+expect 0   LD A,1
+type \]\x
+wait 0.3
+dump joinb
+expect 0   LD A,1  RET
+type \]\b\b\b\b\b\n
+press REVOLTIJO DE LETRAS
+wait 0.3
+dump restored
+expect 0   LD A,1
+expect 1   RET
+# a long line scrolls sideways
+type \]\n
+press RECUERDA LA PALABRA
+type VERYLONGNAME_OF_A_ROUTINE
+wait 0.3
+dump long
+expect 2 NGNAME_OF_A_ROUTINE
+type \u
+wait 0.3
+dump long_up
+expect 2   CALL VERYLONGNAME_
+expect 1   RET
+# line numbers (NIVEL)
+press NIVEL
+wait 0.3
+dump numbers
+expect 0 001   LD A,1
+expect 1 002   RET
+expect 2 003   CALL VERYLONGN
+press NIVEL
+# insert a line before the current one (1 JUGADOR), delete it (2 JUGADORES)
+press 1 JUGADOR
+type ; inserted
+wait 0.3
+dump inserted
+expect 1 ; inserted
+expect 2   RET
+press 2 JUGADORES
+wait 0.3
+expect 1   RET
+# the guide on the word at the cursor, and its example inserted below
+type \u\[\r\r\r
+type \h
+wait 0.5
+dump help_ld
+expect 0 LD
+expect 1 LD to,from: copy. 8
+type \n
+wait 0.5
+dump help_example
+expect 0   LD A,1
+expect 1   LD HL,MSG
+expect 2   RET
+# FIND (CARTUCHOS ADICIONALES types "FIND ") and LINE
+press CARTUCHOS ADICIONALES
+type CALL\n
+wait 0.5
+dump find
+expect 3   CALL VERYLONGNAME_
+type \e
+type LINE 1\n
+wait 0.5
+dump line1
+expect 0   LD A,1
+expect 1   LD HL,MSG
+quit

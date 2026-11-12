@@ -1,0 +1,72 @@
+# Panel keys that run commands, the guide from the command line (page 2), NEW, and the free memory
+wait 1.5
+expect 0 EASM 1.0        2815
+type \e
+type ORG USERRAM\n
+type LD A,42\n
+type RET
+# EL NUMERO RELAMPAGO: ASM, BASIC: RUN (from the editor)
+press EL NUMERO RELAMPAGO
+wait 1
+dump asm_key
+expect 0 >ASM
+expect 1 D000-D002 3 bytes
+type \e
+press BASIC
+wait 1
+dump run_key
+expect 2 >RUN
+type R\n
+wait 0.3
+expect 0 AF=2A*
+type \n
+# HELP at the command line: the index, a letter, a page, and its example typed as a command
+type \h
+wait 0.4
+dump index
+expect 0 >Start here
+type M
+wait 0.3
+expect 0 >NEG
+type \n
+wait 0.3
+type \e\e
+wait 0.3
+type \h
+wait 0.3
+type \u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u\u
+wait 0.3
+expect 0 >Start here
+type \d\d\d\d\d\d
+wait 0.3
+dump index_down
+expect 3 >Monitor
+type \n
+wait 0.3
+dump monitor_page
+expect 0 Monitor
+type \n
+wait 0.4
+dump example_typed
+expect 3 >D 8010
+type \n
+wait 0.4
+dump api_table
+expect 0 8010 JP $*
+expect 1 8013 JP $*
+type \e
+# NEW asks first
+type NEW\n
+type N
+wait 0.3
+type ASM\n
+wait 1
+expect 1 D000-D002 3 bytes
+type NEW\n
+type Y
+wait 0.3
+type ASM\n
+wait 1
+dump after_new
+expect 2 OK, no code
+quit

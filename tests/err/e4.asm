@@ -1,0 +1,3 @@
+LP: NOP
+  DS 200
+  JR LP

@@ -1,0 +1,56 @@
+--- editor_empty t=2.00
+|                    |
+|                    |
+|                    |
+|                    |
+--- typed t=11.56
+|  CALL PRINTSTR     |
+|  RET               |
+|MESSAGE:            |
+|  DB "HOLA",0       |
+--- cmdline t=12.04
+|EASM 1.0        2815|
+|Z80 assembler       |
+|core: R.T.Russell   |
+|>                   |
+PASS row 2 = [core: R.T.Russell] (got [core: R.T.Russell])
+PASS row 3 = [>] (got [>])
+--- asm t=13.60
+|>ASM                |
+|D000-D00B 12 bytes  |
+|Entry D000          |
+|>                   |
+PASS row 1 = [D000-D00B 12 bytes] (got [D000-D00B 12 bytes])
+PASS row 2 = [Entry D000] (got [Entry D000])
+PASS row 3 = [>] (got [>])
+PASS mem D000 = 21 07 D0 CD 10 80 C9 48 4F 4C 41 00 (got 21 07 D0 CD 10 80 C9 48 4F 4C 41 00 )
+--- run t=15.20
+|Entry D000          |
+|>RUN                |
+|HOLA                |
+|>                   |
+PASS row 2 = [HOLA] (got [HOLA])
+PASS row 3 = [>] (got [>])
+--- regs t=16.02
+|AF=0044 -Z-P-- ---- |
+|BC=2203 DE=8115     |
+|HL=D00C IX=C187     |
+|IY=C20D SP=C4FC     |
+PASS row 0 = [AF=*] (got [AF=0044 -Z-P-- ----])
+PASS row 1 = [BC=*] (got [BC=2203 DE=8115])
+PASS row 3 = [IY=*] (got [IY=C20D SP=C4FC])
+--- back_in_editor t=16.98
+|  CALL PRINTSTR     |
+|  RET               |
+|MESSAGE:            |
+|  DB "HOLA",0       |
+--- top t=18.30
+|ORG USERRAM         |
+|START:              |
+|  LD HL,MESSAGE     |
+|  CALL PRINTSTR     |
+PASS row 0 = [ORG USERRAM] (got [ORG USERRAM])
+PASS row 1 = [START:] (got [START:])
+PASS row 2 = [  LD HL,MESSAGE] (got [  LD HL,MESSAGE])
+PASS row 3 = [  CALL PRINTSTR] (got [  CALL PRINTSTR])
+RESULT pass=15 fail=0

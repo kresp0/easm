@@ -1,0 +1,73 @@
+--- a_error t=5.66
+|  18 FC             |
+|D004 LD Q,1         |
+|Syntax error        |
+|D004                |
+PASS row 2 = [Syntax error] (got [Syntax error])
+PASS row 3 = [D004 ] (got [D004])
+PASS mem D000 = 3E 3E 18 FC C9 (got 3E 3E 18 FC C9 )
+--- disasm t=8.08
+|D000 LD A,$3E       |
+|D002 JR $D000       |
+|D004 RET            |
+|D005 NOP            |
+PASS row 0 = [D000 LD A,$3E] (got [D000 LD A,$3E])
+PASS row 1 = [D002 JR $D000] (got [D002 JR $D000])
+PASS row 2 = [D004 RET] (got [D004 RET])
+--- mem t=9.58
+|D000 3E 3E 18 FC    |
+|D004 C9 00 00 00    |
+|D008 00 00 00 00    |
+|D00C 00 00 00 00    |
+PASS row 0 = [D000 3E 3E 18 FC] (got [D000 3E 3E 18 FC])
+PASS row 1 = [D004 C9 00 00 00] (got [D004 C9 00 00 00])
+PASS row 0 = [D004 C9 00 00 00] (got [D004 C9 00 00 00])
+PASS mem D010 = 11 22 33 44 00 55 (got 11 22 33 44 00 55 )
+PASS row 2 = [Same] (got [Same])
+--- compare t=24.30
+|>E D035 AB          |
+|>C D020,D02F,D030   |
+|D025 AA AB          |
+|>                   |
+PASS row 2 = [D025 AA AB] (got [D025 AA AB])
+PASS row 2 = [Outside user RAM] (got [Outside user RAM])
+PASS row 2 = [Outside user RAM] (got [Outside user RAM])
+--- regs_ret t=29.92
+|AF=014A -Z--N- ---- |
+|BC=1004 DE=8115     |
+|HL=D004 IX=C187     |
+|IY=C006 SP=C4FC     |
+PASS row 0 = [AF=*] (got [AF=014A -Z--N- ----])
+loaded src_api.asm: 25 lines, 398 bytes
+--- api t=31.64
+|                    |
+|  N=12345           |
+|BEEF7E!             |
+|                    |
+PASS row 0 = [] (got [])
+PASS row 1 = [  N=12345] (got [  N=12345])
+PASS row 2 = [BEEF7E!] (got [BEEF7E!])
+--- after_exit t=32.36
+|  N=12345           |
+|BEEF7E!             |
+|EXIT at D037        |
+|>                   |
+PASS row 3 = [>] (got [>])
+PASS row 2 = [EXIT at D037] (got [EXIT at D037])
+--- regs_exit t=33.08
+|AF=4B0C ---P-- D037 |
+|BC=1234 DE=0102     |
+|HL=0000 IX=C187     |
+|IY=C20C SP=C4FA     |
+PASS row 0 = [AF=4B0C ---P-- D037] (got [AF=4B0C ---P-- D037])
+PASS row 1 = [BC=1234*] (got [BC=1234 DE=0102])
+PASS row 0 = [D03E 4B*] (got [D03E 4B AA 00 00])
+--- break t=40.50
+|D002                |
+|>G D000             |
+|Break               |
+|>                   |
+PASS row 2 = [Break] (got [Break])
+PASS row 3 = [>] (got [>])
+PASS row 2 = [=0002H 2] (got [=0002H 2])
+RESULT pass=26 fail=0

@@ -1,0 +1,107 @@
+# The monitor: A, D, M, E, F, C, G, R; the API; EXIT; ANSWER breaks a program
+wait 1.5
+# A: assemble line by line (numbers in hex), an error keeps the address
+type A D000\n
+type LD A,3E\n
+type JR D000\n
+type LD Q,1\n
+wait 0.4
+dump a_error
+expect 2 Syntax error
+expect 3 D004 
+type RET\n
+type \n
+wait 0.4
+expectmem D000 3E 3E 18 FC C9
+# D: disassemble
+type D D000\n
+wait 0.4
+dump disasm
+expect 0 D000 LD A,$3E
+expect 1 D002 JR $D000
+expect 2 D004 RET
+type \e
+# M: memory
+type M D000\n
+wait 0.4
+dump mem
+expect 0 D000 3E 3E 18 FC
+expect 1 D004 C9 00 00 00
+type \d
+wait 0.3
+expect 0 D004 C9 00 00 00
+type \e
+# E with bytes, then interactively
+type E D010 11,22 33\n
+type E D013\n
+type 44\n
+type \n
+type 55\n
+type \e
+wait 0.3
+expectmem D010 11 22 33 44 00 55
+# F and C, and writes outside user RAM are refused
+type F D020,D02F,AA\n
+type F D030,D03F,AA\n
+type C D020,D02F,D030\n
+wait 0.4
+expect 2 Same
+type E D035 AB\n
+type C D020,D02F,D030\n
+wait 0.4
+dump compare
+expect 2 D025 AA AB
+type F C000,C010,0\n
+wait 0.4
+expect 2 Outside user RAM
+type E 8000 0\n
+wait 0.4
+expect 2 Outside user RAM
+# G: run, RET comes back; R shows the registers
+type G D004\n
+wait 0.4
+type R\n
+wait 0.4
+dump regs_ret
+expect 0 AF=*
+type \n
+# a program using the API, ending with EXIT
+load src_api.asm
+type RUN\n
+wait 1
+dump api
+expect 0 
+expect 1   N=12345
+expect 2 BEEF7E!
+type K
+wait 0.5
+dump after_exit
+expect 3 >
+expect 2 EXIT at D037
+type R\n
+wait 0.4
+dump regs_exit
+expect 0 AF=4B0C ---P-- D037
+expect 1 BC=1234*
+type \n
+type ? KEY\n
+wait 0.4
+type M KEY\n
+wait 0.3
+expect 0 D03E 4B*
+type \e
+# ANSWER stops a program that never ends
+type A D000\n
+type JR D000\n
+type \n
+type G D000\n
+wait 1
+hold RESPUESTA 0.3
+wait 0.6
+dump break
+expect 2 Break
+expect 3 >
+type ? 1+1\n
+wait 0.4
+expect 2 =0002H 2
+quit

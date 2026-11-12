@@ -1,0 +1,3 @@
+  DS N
+L: NOP
+N EQU 5

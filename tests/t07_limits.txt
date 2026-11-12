@@ -1,0 +1,33 @@
+# Limits: a nearly full text (Text full in the editor), symbols, and BYE back to the Genio menu
+wait 1.5
+load src_full.asm
+type ASM\n
+wait 3
+dump asm_full
+expect 1 D000-D227 552 bytes
+type \e
+press QUE SOY
+type \]
+type MORE TEXT THAT DOES NOT FIT IN THE REMAINING SPACE OF THE TEXT AREA AT ALL\d
+wait 0.5
+dump text_full
+expect 0 Text full
+type \n
+press 2 JUGADORES
+wait 0.3
+expect 0   NOP
+type \e
+wait 0.3
+dump cmdline
+load src_syms.asm
+type ASM\n
+wait 2
+dump symfull
+expect 2 Symbol table full
+type BYE\n
+wait 2
+dump bye
+expectpc 0000-7FFF
+wait 1
+expectpc 0000-7FFF
+quit

@@ -1,0 +1,50 @@
+# The demonstration program: typed in the editor, assembled, run, and back to EASM
+wait 1.5
+type \e
+wait 0.3
+dump editor_empty
+type ORG USERRAM\n
+type \b\bSTART:\n
+type LD HL,MESSAGE\n
+type CALL PRINTSTR\n
+type RET\n
+type \b\bMESSAGE:\n
+type DB "HOLA",0
+wait 0.3
+dump typed
+type \e
+wait 0.3
+dump cmdline
+expect 2 core: R.T.Russell
+expect 3 >
+type ASM\n
+wait 1
+dump asm
+expect 1 D000-D00B 12 bytes
+expect 2 Entry D000
+expect 3 >
+expectmem D000 21 07 D0 CD 10 80 C9 48 4F 4C 41 00
+type RUN\n
+wait 1
+dump run
+expect 2 HOLA
+expect 3 >
+type R\n
+wait 0.5
+dump regs
+expect 0 AF=*
+expect 1 BC=*
+expect 3 IY=*
+type \n
+wait 0.3
+type \e
+wait 0.3
+dump back_in_editor
+type \u\u\u\u\u\u\u
+wait 0.3
+dump top
+expect 0 ORG USERRAM
+expect 1 START:
+expect 2   LD HL,MESSAGE
+expect 3   CALL PRINTSTR
+quit

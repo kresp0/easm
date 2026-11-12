@@ -1,0 +1,30 @@
+# Directives, labels, forward references and expressions (source loaded into RAM)
+wait 1.5
+load src_directives.asm
+type ASM\n
+wait 2
+dump asm
+expect 1 D000-D02C 45 bytes
+expect 2 Entry D000
+# START: LD B,3 / DJNZ $ / JR FWD / LD HL,TABLE+2 / LD A,(IX+4) / JP FWD2
+expectmem D000 06 03 10 FE 18 19 21 11 D0 DD 7E 04 C3 21 D0
+# TABLE: DB 1,2,'A',"Hi",-1,255 / DW START,1234H,$ / DS 3,0AAH
+expectmem D00F 01 02 41 48 69 FF FF 00 D0 34 12 16 D0 AA AA AA
+# FWD: LD A,LOW (=(3*4)%5|80H = 82H) / FWD2: RET / LD BC,0D10H / LD DE,0FFFFH / LD A,25 /
+# LD A,MASK (=(10&15)^10 = 0) : RET
+expectmem D01F 3E 82 C9 01 10 0D 11 FF FF 3E 19 3E 00 C9
+type SYM\n
+wait 0.5
+dump sym
+expect 0 COUNT           0003
+expect 1 BASE            D100
+type \u\u\u\u\r
+wait 0.4
+dump sym2
+type \e
+wait 0.3
+type ? COUNT*1000+LOW\n
+wait 0.5
+expect 3 >
+expect 2 =0C3AH 3130
+quit

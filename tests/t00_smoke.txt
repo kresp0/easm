@@ -1,0 +1,15 @@
+# Start-up screen (free memory at the top right) and the calculator
+wait 1.5
+dump boot
+expect 0 EASM 1.0        2815
+expect 1 Z80 assembler
+expect 2 core: R.T.Russell
+expect 3 >
+type ? 2+3*4\n
+wait 0.5
+dump calc
+expect 2 =000EH 14
+type ? -1\n
+wait 0.5
+expect 2 =FFFFH 65535
+quit

@@ -1,0 +1,105 @@
+# Assembly errors: message, line number, and the editor at the error
+wait 1.5
+load err/e1.asm
+type ASM\n
+wait 1.5
+expect 0 Line 2:
+expect 1   LD A,
+expect 2 Syntax error
+load err/e2.asm
+type ASM\n
+wait 1.5
+expect 0 Line 3:
+expect 1   JP NOWHERE
+expect 2 Unknown symbol
+load err/e3.asm
+type ASM\n
+wait 1.5
+expect 0 Line 2:
+expect 1 X: NOP
+expect 2 Duplicate label
+load err/e4.asm
+type ASM\n
+wait 1.5
+expect 0 Line 3:
+expect 1   JR LP
+expect 2 Out of range
+load err/e5.asm
+type ASM\n
+wait 1.5
+expect 0 Line 2:
+expect 1   NOP
+expect 2 Outside user RAM
+load err/e6.asm
+type ASM\n
+wait 1.5
+expect 0 Line 1:
+expect 1   LD A,12Z
+expect 2 Bad number
+load err/e7.asm
+type ASM\n
+wait 1.5
+expect 0 Line 1:
+expect 1   LD A,(1+2
+expect 2 Missing )
+load err/e8.asm
+type ASM\n
+wait 1.5
+expect 0 Line 1:
+expect 1   DB 1/0
+expect 2 Division by zero
+load err/e9.asm
+type ASM\n
+wait 1.5
+expect 0 Line 2:
+expect 1 L: NOP
+expect 2 Phase error
+load err/e10.asm
+type ASM\n
+wait 1.5
+expect 0 Line 1:
+expect 1   DB "abc
+expect 2 Bad string
+load err/e11.asm
+type ASM\n
+wait 1.5
+expect 0 Line 1:
+expect 1   DB 300
+expect 2 Out of range
+load err/e12.asm
+type ASM\n
+wait 1.5
+expect 0 Line 1:
+expect 1 ABCDEFGHIJKLMNOPQ: N
+expect 2 Name too long
+load err/e13.asm
+type ASM\n
+wait 1.5
+expect 0 Line 1:
+expect 1   LD A,5 Z
+expect 2 Syntax error
+load err/e14.asm
+type ASM\n
+wait 1.5
+expect 0 Line 1:
+expect 1   FOO A
+expect 2 Syntax error
+load err/e15.asm
+type ASM\n
+wait 1.5
+expect 0 Line 1:
+expect 1   DS 3000
+expect 2 Outside user RAM
+# the editor goes to the last error (QUE SOY key), the cursor where it was found
+load err/e2.asm
+type ASM\n
+wait 1
+type \e
+wait 0.3
+press QUE SOY
+wait 0.3
+dump at_error
+expect 0   NOP
+expect 2   JP NOWHERE
+expectmem C150 0C 02
+quit

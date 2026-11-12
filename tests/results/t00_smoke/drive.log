@@ -1,0 +1,17 @@
+--- boot t=1.54
+|EASM 1.0        2815|
+|Z80 assembler       |
+|core: R.T.Russell   |
+|>                   |
+PASS row 0 = [EASM 1.0        2815] (got [EASM 1.0        2815])
+PASS row 1 = [Z80 assembler] (got [Z80 assembler])
+PASS row 2 = [core: R.T.Russell] (got [core: R.T.Russell])
+PASS row 3 = [>] (got [>])
+--- calc t=3.18
+|core: R.T.Russell   |
+|>? 2+3*4            |
+|=000EH 14           |
+|>                   |
+PASS row 2 = [=000EH 14] (got [=000EH 14])
+PASS row 2 = [=FFFFH 65535] (got [=FFFFH 65535])
+RESULT pass=6 fail=0
