@@ -12,7 +12,7 @@ the machine itself. The constraints that shape everything:
 * Code must run from ROM: no self-modifying code in ROM, page switching from RAM.
 
 ## 2. What was taken from EBASIC
-EBASIC (https://github.com/kresp0/ebasic, 0BSD, same author) is BBC BASIC (Z80) v5 with a Genio layer. Its
+EBASIC (https://github.com/kresp0/ebasic, 0BSD, same author) is R.T. Russell's Z80 BASIC interpreter with a Genio layer. Its
 files are either EBASIC's own or R.T. Russell's (zlib). The audit:
 
 | EBASIC component | File | Origin | In EASM |
@@ -35,7 +35,7 @@ files are either EBASIC's own or R.T. Russell's (zlib). The audit:
 ### Candidates
 | Assembler | Origin | Size | Passes | Source and licence | Fit |
 |---|---|---|---|---|---|
-| **ASMB.Z80** (BBC BASIC Z80 v5) | R.T. Russell | 1383 bytes (sdas build in EBASIC), tables included | 1 per call; BASIC's `FOR pass` loop and `OPT` make two | **published, zlib** | ROMable (no self-modifying code), table-driven, already assembled and run on this target by EBASIC |
+| **ASMB.Z80** (Russell's Z80 BASIC, version 5) | R.T. Russell | 1383 bytes (sdas build in EBASIC), tables included | 1 per call; BASIC's `FOR pass` loop and `OPT` make two | **published, zlib** | ROMable (no self-modifying code), table-driven, already assembled and run on this target by EBASIC |
 | ZEAP 1.x/2.0 | Sigma (Nascom), 1978-79 | ~4 KiB editor-assembler; its source "ultimately stretched to 21K" (Nascom newsletter) | 2 | manual (C) 1978 Sigma; no release of the source found | no usable source |
 | Z80ASM | SLR Systems (CP/M), 1984 | — | multi | commercial; no release of the source found | no |
 | M80 | Microsoft (CP/M) | — | 2 | commercial | no |

@@ -1,6 +1,6 @@
 # EASM: a Z80 assembler for the VTech Genio 2000
 
-*By Santiago Crespo, 2026. The instruction encoder inside it is R.T. Russell's, from BBC BASIC (Z80).*
+*By Santiago Crespo, 2026. The instruction encoder inside it is R.T. Russell's, from his Z80 BASIC interpreter.*
 
 EASM is a 32 KiB cartridge for the Spanish VTech Genio 2000 that turns it into a small Z80
 development system. Everything runs on the Genio's own Z80: no BASIC and no PC are needed.
