@@ -4,7 +4,7 @@
 #   for each page-1 routine that page 2 calls, a stub of the same name that calls it through R_CALL1.
 # Usage: mksyms.py PAGE1.map OUT.s --addr NAME... --call NAME...
 # Copyright (C) 2026 Santiago Crespo
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: 0BSD
 import re
 import sys
 

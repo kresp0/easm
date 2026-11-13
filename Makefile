@@ -2,7 +2,7 @@
 # Page 1 (port 0x03 = 0x80): EASM itself. Page 2 (0x83): the guide. Page 2 calls page-1 routines through
 # stubs that tools/mksyms.py writes from the page-1 map.
 # Copyright (C) 2026 Santiago Crespo
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: 0BSD
 NAME = easm_gl2000
 P1SRC = main io text editor cmd asm expr asmb disasm
 RELS1 = $(P1SRC:%=out/%.rel)

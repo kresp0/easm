@@ -6,7 +6,7 @@
 ; Pass 1 sizes everything and builds the symbol table; pass 2 writes the code (into user RAM only)
 ; and checks that every label kept its pass-1 address.
 ; Copyright (C) 2026 Santiago Crespo
-; SPDX-License-Identifier: GPL-3.0-or-later
+; SPDX-License-Identifier: 0BSD
 
 	.include "shared.inc"
 	.area	CODE

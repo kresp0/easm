@@ -82,9 +82,12 @@ editor, running programs and the monitor have been tested only in MAME so far;
 [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md) lists the risks.
 
 ## Licence
-* GPL-3.0-or-later (`LICENSE`), Copyright (C) 2026 Santiago Crespo: EASM's own files, and the parts
-  taken from EBASIC (same author and licence): the LCD and keyboard drivers, the start-up, the
-  trampolines, the guide's viewer and compressor, the MAME driver script, and the build tools.
+* 0BSD (`LICENSE`), Copyright (C) 2026 Santiago Crespo: EASM's own files, code and documentation, and
+  the parts taken from EBASIC (same author and licence): the LCD and keyboard drivers, the start-up,
+  the trampolines, the guide's viewer and compressor, the MAME driver script, and the build tools. You
+  may use, copy, modify and distribute them for any purpose, with or without fee, without conditions.
+  Until 2026-11-13 they were released under GPL-3.0-or-later; copies taken then may still be used under
+  those terms.
 * zlib licence: `third_party/bbcz80/` holds R.T. Russell's `ASMB.Z80` unchanged, with its
   `licence.txt`. `src/asmb.s` is an altered version of it, marked as such in its header. The name
   "BBC BASIC" is not used for this cartridge.

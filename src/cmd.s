@@ -7,7 +7,7 @@
 ;   R  registers after the last program   G [addr]  run   F from,to,byte  fill   C from,to,with  compare
 ; Monitor numbers are hexadecimal (a word made of hex digits is a number); ASM syntax applies otherwise.
 ; Copyright (C) 2026 Santiago Crespo
-; SPDX-License-Identifier: GPL-3.0-or-later
+; SPDX-License-Identifier: 0BSD
 
 	.include "shared.inc"
 	.area	CODE

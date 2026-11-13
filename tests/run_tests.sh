@@ -3,7 +3,7 @@
 # (tests/insn.py) and the disassembler sweep (tests/opsweep.py). Logs in tests/results/.
 # Usage: tests/run_tests.sh [quick]   (quick: only the scripted tests)
 # Copyright (C) 2026 Santiago Crespo
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: 0BSD
 cd "$(dirname "$0")/.." || exit 1
 R=tests/results
 mkdir -p $R

@@ -9,7 +9,7 @@
 ; The table follows the source text: [length][name][value lo][value hi] ..., from TXTEND to SYMEND.
 ; The API names (PRINTSTR, ...) are built in.
 ; Copyright (C) 2026 Santiago Crespo
-; SPDX-License-Identifier: GPL-3.0-or-later
+; SPDX-License-Identifier: 0BSD
 
 	.include "shared.inc"
 	.area	CODE

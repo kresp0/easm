@@ -3,7 +3,7 @@
 # into sdasz80 syntax. Only syntax changes; every instruction is kept as written.
 # Usage: m80_to_sdas.py IN.Z80 OUT.s AREA
 # Copyright (C) 2026 Santiago Crespo
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: 0BSD
 import re
 import sys
 

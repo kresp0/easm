@@ -6,7 +6,7 @@
 ; multiple of 4), HELP (the guide; on a word, its page), ANSWER (the command line).
 ; The activity panel types mnemonics and directives, and has the editor's commands (see ACTS).
 ; Copyright (C) 2026 Santiago Crespo
-; SPDX-License-Identifier: GPL-3.0-or-later
+; SPDX-License-Identifier: 0BSD
 
 	.include "shared.inc"
 	.area	CODE

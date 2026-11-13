@@ -6,7 +6,7 @@
 #   * Lays every page out exactly as hwrap in help.s does and fails if one does not fit.
 # Usage: gen_help.py help.txt ASMB.Z80 out/helpdata.s
 # Copyright (C) 2026 Santiago Crespo
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: 0BSD
 import re
 import sys
 from collections import Counter

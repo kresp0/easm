@@ -2,7 +2,7 @@
 ; start-up, the RAM trampolines to page 2, the interrupt hook, running user code (G) and errors.
 ; The start-up and the trampolines follow EBASIC's genio1.s.
 ; Copyright (C) 2026 Santiago Crespo
-; SPDX-License-Identifier: GPL-3.0-or-later
+; SPDX-License-Identifier: 0BSD
 
 	.include "shared.inc"
 	.area	CODE

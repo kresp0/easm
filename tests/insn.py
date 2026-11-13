@@ -5,7 +5,7 @@
 #   insn.py gen DIR     write DIR/insn_N.asm (sources) and DIR/t_insn_N.txt (MAME scripts)
 #   insn.py check DIR   read the logs DIR/insn_N/drive.log and check them; exit status 1 on a mismatch
 # Copyright (C) 2026 Santiago Crespo
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: 0BSD
 import os
 import re
 import subprocess

@@ -5,7 +5,7 @@
 ; A DD/FD prefix that changes nothing is shown as "DB DD"; an empty ED slot as "DB ED,nn".
 ; Numbers are hexadecimal with a "$" ($12, $D000), which the assembler reads in any mode.
 ; Copyright (C) 2026 Santiago Crespo
-; SPDX-License-Identifier: GPL-3.0-or-later
+; SPDX-License-Identifier: 0BSD
 
 	.include "shared.inc"
 	.area	CODE

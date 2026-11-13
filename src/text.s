@@ -3,7 +3,7 @@
 ; their count (1-31) as its first byte, so indentation costs one byte. There is always at least one
 ; line (NLINES >= 1). The symbol table, when there is one, follows at TXTEND.
 ; Copyright (C) 2026 Santiago Crespo
-; SPDX-License-Identifier: GPL-3.0-or-later
+; SPDX-License-Identifier: 0BSD
 
 	.include "shared.inc"
 	.area	CODE

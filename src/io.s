@@ -4,7 +4,7 @@
 ; and with interrupts held off around each keyboard column so that the break check of the interrupt
 ; hook can share port 0x10.
 ; Copyright (C) 2026 Santiago Crespo
-; SPDX-License-Identifier: GPL-3.0-or-later
+; SPDX-License-Identifier: 0BSD
 
 	.include "shared.inc"
 	.area	CODE

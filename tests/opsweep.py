@@ -4,7 +4,7 @@
 #   opsweep.py gen DIR | opsweep.py check DIR
 # Differences are listed; those in undocumented or empty opcodes are reported apart.
 # Copyright (C) 2026 Santiago Crespo
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: 0BSD
 import os
 import re
 import sys

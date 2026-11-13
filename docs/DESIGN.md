@@ -12,7 +12,7 @@ the machine itself. The constraints that shape everything:
 * Code must run from ROM: no self-modifying code in ROM, page switching from RAM.
 
 ## 2. What was taken from EBASIC
-EBASIC (https://github.com/kresp0/ebasic, GPL-3.0-or-later, same author) is BBC BASIC (Z80) v5 with a Genio layer. Its
+EBASIC (https://github.com/kresp0/ebasic, 0BSD, same author) is BBC BASIC (Z80) v5 with a Genio layer. Its
 files are either EBASIC's own or R.T. Russell's (zlib). The audit:
 
 | EBASIC component | File | Origin | In EASM |

@@ -4,7 +4,7 @@
 # Lines starting with "#" are comments. Entries whose title is all capitals are mnemonics and
 # directives: gen_help.py checks that every one of ASMB.Z80's mnemonics has one.
 # Copyright (C) 2026 Santiago Crespo
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: 0BSD
 
 @Start here
 EASM: write Z80 code, assemble it, run it.
