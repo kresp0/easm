@@ -15,11 +15,11 @@ development system. Everything runs on the Genio's own Z80: no BASIC and no PC a
   on the editor, commands, syntax, registers, flags, the API and the memory map;
 * an **API** at fixed addresses (`PRINTSTR`, `GETKEY`, ...) that programs call, with built-in names.
 
-| Editor | ASM | RUN |
-|---|---|---|
-| ![](docs/screen_editor.png) | ![](docs/screen_asm.png) | ![](docs/screen_run.png) |
+![MAME snapshots](screens_mame.png)
 
-*(MAME snapshots of the demonstration program; the gaps between characters are the LCD's.)*
+*MAME snapshots, 4x enlarged: start, the demonstration program in the editor, ASM, RUN, the
+disassembler and a page of the guide (HELP). `tests/sheet.sh` makes this picture from
+`tests/shots.txt`; the gaps between characters are the LCD's.*
 
 **Machines.** Written for the Spanish VTech Genio 2000, where its first runs on a real unit worked (the rest was tested in MAME). It will most likely also work on its
 relatives the Genius 4000, Genius LEADER 4000 Quadro, Genius LEADER 4004 Quadro L and PreComputer

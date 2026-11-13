@@ -1,0 +1,35 @@
+# Snapshots for the README sheet (tests/sheet.sh): start, editor, ASM, RUN, disassembler, guide
+wait 1.5
+snap
+type \e
+wait 0.3
+type ORG USERRAM\n
+type \b\bSTART:\n
+type LD HL,MESSAGE\n
+type CALL PRINTSTR\n
+type RET\n
+type \b\bMESSAGE:\n
+type DB "HOLA",0
+wait 0.3
+snap
+type \e
+wait 0.3
+type ASM\n
+wait 1
+snap
+type RUN\n
+wait 1
+snap
+type D D000\n
+wait 0.5
+snap
+type \e
+wait 0.3
+type \h
+wait 0.4
+type D
+wait 0.3
+type \n
+wait 0.4
+snap
+quit
