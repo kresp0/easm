@@ -44,7 +44,7 @@ unit only start-up, the command line, `ASM`, `?` and the guide so far.
 |---|---|
 | The rest on a real Genio 2000 | editor, RUN/G/EXIT/ANSWER, monitor; see the risks in COMPATIBILITY.md |
 | Storage: SAVE/LOAD of sources and binaries | needs a link; driver interface designed (DESIGN.md §10) |
-| Software UART on the printer port, ESP32 storage, PC transfers, remote debugging | designed, not implemented (DESIGN.md §10) |
+| Storage on a memory card, software UART on the printer port (the port itself measured on the unit by pc-link), ESP32 link to a PC, remote debugging | designed, not implemented (DESIGN.md §10) |
 | Macros, INCLUDE, conditional assembly, multi-file projects | RAM is the limit; notes in DESIGN.md §10 |
 | A listing (address, bytes, line) | possible on the printer once the port is used |
 | Single step, breakpoints, registers after a break | not technically viable as designed (DESIGN.md §7); `CALL EXIT` serves as a breakpoint |

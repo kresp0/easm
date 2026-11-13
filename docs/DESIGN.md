@@ -200,24 +200,36 @@ DRV_DIR    HL = callback per name
   load address and the entry point; LOADB keeps the user-RAM check.
 * **Include files** would read another source through `DRV_READ` line by line in both passes; the
   line numbers of errors would then need the file too.
+* **Where the files live**: a memory card (battery-backed RAM, FRAM or flash) in the cartridge window.
+  The firmware's BASIC already has `LOAD/SAVE/DIR/ERASE/FORMAT` for a RAM cartridge (read from its code,
+  not run: signature `55 AA EE` at 8000 and `BB 46` at 8006, a directory of 16-byte entries from 8050,
+  pages 0x80/0x81; [firmware/HIDDEN_FEATURES.md](https://github.com/kresp0/vtech-genio2000/blob/main/docs/firmware/HIDDEN_FEATURES.md)). A driver
+  that keeps that format would share files with the built-in BASIC. Two things to settle first: whether
+  `/WR` reaches the cartridge connector (open question E1), and how the card shares the 8000-BFFF window
+  with EASM's own pages (0x80, 0x83), since the code that switches pages has to run from the internal RAM.
 
 ### Software UART on the printer port
-The DB25's lines ([hardware/HARDWARE.md](https://github.com/kresp0/vtech-genio2000/blob/main/docs/hardware/HARDWARE.md), from VGLDK `printer.h`): data on
-port 0x10 (the keyboard column latch), BUSY on port 0x11 bit 5, STROBE on port 0x12 bit 2. The ROM
-dumper (https://github.com/kresp0/vtech-genio2000-rom-dumper) sent data at 9600 baud on DATA0 with a
-timed loop ([hardware/CLOCK_AND_SOUND.md](https://github.com/kresp0/vtech-genio2000/blob/main/docs/hardware/CLOCK_AND_SOUND.md)). A two-way link could use DATA0 (TX) and BUSY (RX), with these
-constraints:
-* port 0x10 is shared with the keyboard scan: a transfer must run with interrupts off and the keyboard
-  not scanned, and between transfers the keyboard scan leaves DATA0 low, which a UART sees as a break;
-  the far side (or a transistor) must accept or invert that;
-* the timing loops must be counted in T-states for 6.13 MHz (the measured clock,
-  [hardware/HARDWARE.md](https://github.com/kresp0/vtech-genio2000/blob/main/docs/hardware/HARDWARE.md)) and checked on the unit.
+Measured on the unit since this design was written ([hardware/PRINTER_PORT.md](https://github.com/kresp0/vtech-genio2000/blob/main/docs/hardware/PRINTER_PORT.md),
+with a working example in [examples/pc-link](https://github.com/kresp0/vtech-genio2000/blob/main/examples/pc-link)): a USB-serial adapter's TXD on DB25
+pin 11 and its RXD on pin 2 give a two-way link driven by the cartridge.
+* **Transmit** on DATA0, port 0x10 bit 0, inverted: 1 drives the pin low. Port 0x10 is also the keyboard
+  column latch. `kscan` ends each column with `OUT (10h),0`, which leaves the line high (idle), so the
+  scan does not hold a break; but selecting column 0 drives the line low for a moment, and a PC that is
+  listening receives that as a start bit. The scan must skip column 0 while a PC listens.
+* **Receive** on BUSY, port 0x11 bit 5, inverted: 1 while the pin is low. Receivers polled with
+  T-state-counted delays for 6.13179 MHz get every packet right at 2400-76800 baud on the unit. No
+  interrupt is tied to BUSY, so the Genio receives only while it is polling: a byte that starts while it
+  draws the LCD or scans the keyboard is lost. A protocol must be stop-and-wait, with every packet
+  starting with a few `FF` bytes (no falling edge inside, so a late receiver waits for the next start
+  bit) and the Genio finishing its own work before it answers.
+* The 9600 baud receive margin is the same on the unit as in MAME (-5 % .. +4 %), so the measured clock
+  is right to well within 1 %. MAME has no printer port; `tests/bridge.lua` of pc-link stands in for it.
 
-### ESP32 as storage and link to a PC
-An ESP32 on the printer port, speaking a framed protocol over the UART: `[cmd][len][data][checksum]`,
-commands OPEN/READ/WRITE/CLOSE/DIR mapping onto the storage driver; files on its flash or SD; a PC
-could reach the same files over Wi-Fi. Remote debugging would add PEEK/POKE/GO commands answered by a
-small resident loop, using the same `EXIT` mechanism to come back.
+### ESP32 as a link to a PC
+An ESP32 on the printer port could speak the stop-and-wait packet protocol of pc-link (`A5 5A`, type,
+sequence, length, data, CRC-16) and give a PC access over Wi-Fi: uploading sources and binaries,
+or remote debugging with PEEK/POKE/GO commands answered by a small resident loop that comes back
+through the same `EXIT` mechanism. Storage itself is better on an expansion card (above).
 
 ### Macros and multi-file projects
 Macros need a definition store (they could live after the symbol table in pass 1, as text) and
