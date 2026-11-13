@@ -1,4 +1,4 @@
-; asmb.s - the Z80 translation section of R.T. Russell's Z80 BASIC assembler, ASMB.Z80 (version 5.0)
+; asmb.s - the Z80 translation section of R.T. Russell's BBCZ80 assembler, ASMB.Z80 (version 5.0)
 ; (third_party/bbcz80/ASMB.Z80, zlib licence, third_party/bbcz80/licence.txt).
 ;
 ; ALTERED SOURCE VERSION, changed for EASM (it is not the original software):
